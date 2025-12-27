@@ -272,8 +272,13 @@
 </head>
 
 <body>
+  <!-- Skip Navigation Links for A11y -->
+  <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+  <a href="#nav" class="skip-link">Перейти к навигации</a>
+  <a href="#contact" class="skip-link">Перейти к контактам</a>
+
   <!-- TOAST NOTIFICATIONS CONTAINER -->
-  <div id="toastContainer" class="toast-container"></div>
+  <div id="toastContainer" class="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
 
   <!-- HEADER -->
   <header class="header" id="header">
@@ -306,7 +311,7 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="hero section section--hero" id="hero">
+  <section class="hero section section--hero" id="main-content" role="main">
     <div class="hero__background"></div>
     <div class="snowflakes" id="snowflakes" aria-hidden="true"></div>
     <div class="hero__container container">
