@@ -1755,6 +1755,102 @@ async function runPwaChecklist() {
       console.log('✅ Snow canvas initialized');
     }
 
+    // Регистрация Service Worker для PWA
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/new-year_2026/sw.js')
+          .then((registration) => {
+            console.log('✅ Service Worker registered:', registration.scope);
+
+            // Проверка обновлений каждые 60 секунд
+            setInterval(() => {
+              registration.update();
+            }, 60000);
+
+            // Обработка обновлений SW
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              console.log('🔄 Service Worker update found');
+
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // Показать уведомление о доступном обновлении
+                  if (confirm('Доступна новая версия сайта. Обновить?')) {
+                    newWorker.postMessage({ type: 'SKIP_WAITING' });
+                    window.location.reload();
+                  }
+                }
+              });
+            });
+          })
+          .catch((error) => {
+            console.error('❌ Service Worker registration failed:', error);
+          });
+
+        // Обработка изменений контроллера (новый SW активирован)
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          console.log('🔄 Service Worker controller changed');
+          window.location.reload();
+        });
+      });
+    }
+
+    // PWA Install Prompt
+    let deferredPrompt;
+    const installButton = document.getElementById('install-app-button');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent the mini-infobar from appearing
+      e.preventDefault();
+      deferredPrompt = e;
+
+      // Show install button
+      if (installButton) {
+        installButton.style.display = 'block';
+        console.log('💡 PWA install prompt ready');
+      }
+    });
+
+    if (installButton) {
+      installButton.addEventListener('click', async () => {
+        if (!deferredPrompt) {
+          console.log('⚠️ Install prompt not available');
+          return;
+        }
+
+        // Show the install prompt
+        deferredPrompt.prompt();
+
+        // Wait for the user's response
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`👤 User response to install prompt: ${outcome}`);
+
+        if (outcome === 'accepted') {
+          console.log('✅ User accepted the install prompt');
+        } else {
+          console.log('❌ User dismissed the install prompt');
+        }
+
+        // Clear the deferredPrompt
+        deferredPrompt = null;
+        installButton.style.display = 'none';
+      });
+    }
+
+    // Detect if app is running as PWA
+    window.addEventListener('appinstalled', () => {
+      console.log('🎉 PWA was installed!');
+      if (installButton) {
+        installButton.style.display = 'none';
+      }
+    });
+
+    // Check if running as standalone PWA
+    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+      console.log('📱 Running as PWA (standalone mode)');
+      document.body.classList.add('pwa-mode');
+    }
+
     console.log('✅ All modules initialization complete!');
   }
 })();
