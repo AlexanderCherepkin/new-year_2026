@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Главная страница -->
+  <url>
+    <loc>https://alexandercherepkin.github.io/new-year_2026/</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://alexandercherepkin.github.io/new-year_2026/images/room-800.webp</image:loc>
+      <image:title>Новогодняя ёлка с украшениями</image:title>
+    </image:image>
+  </url>
+
+  <!-- Семейный пакет -->
+  <url>
+    <loc>https://alexandercherepkin.github.io/new-year_2026/packages/html/family.html</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Корпоративный пакет -->
+  <url>
+    <loc>https://alexandercherepkin.github.io/new-year_2026/packages/html/corporate.html</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Детский пакет -->
+  <url>
+    <loc>https://alexandercherepkin.github.io/new-year_2026/packages/html/kids.html</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

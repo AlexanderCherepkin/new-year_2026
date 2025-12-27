@@ -8,8 +8,8 @@ Allow: /
 Disallow: /cgi-bin/
 Disallow: /.well-known/
 
-# Карта сайта (когда будет готова)
-# Sitemap: https://yourdomain.com/sitemap.xml
+# Карта сайта
+Sitemap: https://alexandercherepkin.github.io/new-year_2026/sitemap.xml
 
 # Основные поисковые боты - полный доступ
 User-agent: Googlebot
