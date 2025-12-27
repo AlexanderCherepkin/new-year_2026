@@ -670,8 +670,15 @@ const Lightbox = {
   totalEl: null,
   images: [],
   currentIndex: 0,
+  initialized: false,
 
   init() {
+    // Prevent multiple initialization
+    if (this.initialized) {
+      console.warn('⚠️ Lightbox already initialized');
+      return;
+    }
+
     this.element = document.getElementById('lightbox');
     if (!this.element) return;
 
@@ -679,6 +686,9 @@ const Lightbox = {
     this.captionEl = document.getElementById('lightboxCaption');
     this.currentEl = document.getElementById('lightboxCurrent');
     this.totalEl = document.getElementById('lightboxTotal');
+
+    // Reset images array to prevent duplication
+    this.images = [];
 
     document.querySelectorAll('.gallery__item').forEach((item, index) => {
       const img = item.querySelector('.gallery__image');
@@ -717,6 +727,9 @@ const Lightbox = {
       if (e.key === 'ArrowLeft') this.prev();
       if (e.key === 'ArrowRight') this.next();
     });
+
+    // Mark as initialized
+    this.initialized = true;
   },
 
   open(index) {
