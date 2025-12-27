@@ -1,28 +1,27 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <base href="/new-year_2026/">
 
-  <!-- Preconnect для критичных ресурсов -->
+  <!-- Preconnect РґР»СЏ РєСЂРёС‚РёС‡РЅС‹С… СЂРµСЃСѓСЂСЃРѕРІ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-  <!-- Preload критичных ресурсов -->
+  <!-- Preload РєСЂРёС‚РёС‡РЅС‹С… СЂРµСЃСѓСЂСЃРѕРІ -->
   <link rel="preload" href="css/new-year.css" as="style">
   <link rel="preload" href="js/new-year.js" as="script">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Встречайте Новый 2026 год вместе с нами! Волшебная атмосфера, праздничные предложения и новогодние чудеса.">
+    content="Р’СЃС‚СЂРµС‡Р°Р№С‚Рµ РќРѕРІС‹Р№ 2026 РіРѕРґ РІРјРµСЃС‚Рµ СЃ РЅР°РјРё! Р’РѕР»С€РµР±РЅР°СЏ Р°С‚РјРѕСЃС„РµСЂР°, РїСЂР°Р·РґРЅРёС‡РЅС‹Рµ РїСЂРµРґР»РѕР¶РµРЅРёСЏ Рё РЅРѕРІРѕРіРѕРґРЅРёРµ С‡СѓРґРµСЃР°.">
   <meta name="theme-color" content="#0f172a">
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Новый Год 2026 — Волшебство начинается здесь">
+  <meta property="og:title" content="РќРѕРІС‹Р№ Р“РѕРґ 2026 вЂ” Р’РѕР»С€РµР±СЃС‚РІРѕ РЅР°С‡РёРЅР°РµС‚СЃСЏ Р·РґРµСЃСЊ">
   <meta property="og:description"
-    content="Встречайте Новый 2026 год вместе с нами! Организация праздников, подарки, Дед Мороз и незабываемая атмосфера.">
+    content="Р’СЃС‚СЂРµС‡Р°Р№С‚Рµ РќРѕРІС‹Р№ 2026 РіРѕРґ РІРјРµСЃС‚Рµ СЃ РЅР°РјРё! РћСЂРіР°РЅРёР·Р°С†РёСЏ РїСЂР°Р·РґРЅРёРєРѕРІ, РїРѕРґР°СЂРєРё, Р”РµРґ РњРѕСЂРѕР· Рё РЅРµР·Р°Р±С‹РІР°РµРјР°СЏ Р°С‚РјРѕСЃС„РµСЂР°.">
   <meta property="og:image" content="https://newyear2026.ru/images/og-image-800.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -32,22 +31,22 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Новый Год 2026 — Волшебство начинается здесь">
+  <meta name="twitter:title" content="РќРѕРІС‹Р№ Р“РѕРґ 2026 вЂ” Р’РѕР»С€РµР±СЃС‚РІРѕ РЅР°С‡РёРЅР°РµС‚СЃСЏ Р·РґРµСЃСЊ">
   <meta name="twitter:description"
-    content="Встречайте Новый 2026 год вместе с нами! Организация праздников, подарки и незабываемая атмосфера.">
+    content="Р’СЃС‚СЂРµС‡Р°Р№С‚Рµ РќРѕРІС‹Р№ 2026 РіРѕРґ РІРјРµСЃС‚Рµ СЃ РЅР°РјРё! РћСЂРіР°РЅРёР·Р°С†РёСЏ РїСЂР°Р·РґРЅРёРєРѕРІ, РїРѕРґР°СЂРєРё Рё РЅРµР·Р°Р±С‹РІР°РµРјР°СЏ Р°С‚РјРѕСЃС„РµСЂР°.">
   <meta name="twitter:image" content="https://newyear2026.ru/images/og-image-800.webp">
 
   <!-- Favicon -->
   <link rel="icon"
     href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20fill='%23FFD700'%20d='M50%2C5%20l11%2C22%20h23%20l-18%2C14%20l7%2C23%20l-19%2C-13%20l-19%2C13%20l7%2C-23%20l-18%2C-14%20h23%20z'/%3E%3Cpolygon%20fill='%231B5E20'%20points='50%2C25%2085%2C85%2015%2C85'/%3E%3Cpolygon%20fill='%232E7D32'%20points='50%2C20%2075%2C65%2025%2C65'/%3E%3Cpolygon%20fill='%23388E3C'%20points='50%2C15%2065%2C45%2035%2C45'/%3E%3Crect%20fill='%235D4037'%20x='42'%20y='85'%20width='16'%20height='15'/%3E%3C/svg%3E">
 
-  <title>Новый Год 2026 — Волшебство начинается здесь</title>
+  <title>РќРѕРІС‹Р№ Р“РѕРґ 2026 вЂ” Р’РѕР»С€РµР±СЃС‚РІРѕ РЅР°С‡РёРЅР°РµС‚СЃСЏ Р·РґРµСЃСЊ</title>
 
   <!-- PWA Manifest -->
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192.png">
 
-  <!-- Critical CSS (только для первого экрана) -->
+  <!-- Critical CSS (С‚РѕР»СЊРєРѕ РґР»СЏ РїРµСЂРІРѕРіРѕ СЌРєСЂР°РЅР°) -->
   <style>
     :root {
       --color-primary: #c41e3a;
@@ -137,7 +136,7 @@
     }
   </style>
 
-  <!-- Отложенный CSS с версией -->
+  <!-- РћС‚Р»РѕР¶РµРЅРЅС‹Р№ CSS СЃ РІРµСЂСЃРёРµР№ -->
   <link rel="stylesheet" href="css/new-year.css?v=3.3" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="css/new-year.css?v=3.3">
@@ -149,7 +148,7 @@
     <link rel="stylesheet" href="css/mobile-fixes.css?v=1.0">
   </noscript>
 
-  <!-- Отложенные шрифты -->
+  <!-- РћС‚Р»РѕР¶РµРЅРЅС‹Рµ С€СЂРёС„С‚С‹ -->
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Merriweather:wght@400;700&display=swap"
     as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -168,8 +167,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Новый Год 2026",
-      "description": "Организация новогодних праздников",
+      "name": "РќРѕРІС‹Р№ Р“РѕРґ 2026",
+      "description": "РћСЂРіР°РЅРёР·Р°С†РёСЏ РЅРѕРІРѕРіРѕРґРЅРёС… РїСЂР°Р·РґРЅРёРєРѕРІ",
       "url": "https://newyear2026.ru",
       "logo": "https://newyear2026.ru/logo.png",
       "contactPoint": {
@@ -188,26 +187,26 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <div class="header__container container">
-      <a href="#hero" class="logo" aria-label="Главная">
-        <div class="lazy-lottie" class="logo-img" src="/animations/logo.json" speed="1"
+      <a href="#hero" class="logo" aria-label="Р“Р»Р°РІРЅР°СЏ">
+        <div class="lazy-lottie" class="logo-img" src="animations/logo.json" speed="1"
           style="width: 100px; height: 100px;background-color:transparent !important;" loop autoplay>
         </div>
-        <span>Новый Год 2026</span>
+        <span>РќРѕРІС‹Р№ Р“РѕРґ 2026</span>
       </a>
       <nav class="nav" id="nav">
         <ul class="nav__list" id="navList">
-          <li class="nav__item"><a href="#hero" class="nav__link nav__link--active">Главная</a></li>
-          <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
-          <li class="nav__item"><a href="#video-gallery" class="nav__link">О празднике</a></li>
-          <li class="nav__item"><a href="#countdown" class="nav__link">Таймер</a></li>
-          <li class="nav__item"><a href="#offers" class="nav__link">Предложения</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#hero" class="nav__link nav__link--active">Р“Р»Р°РІРЅР°СЏ</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Р“Р°Р»РµСЂРµСЏ</a></li>
+          <li class="nav__item"><a href="#video-gallery" class="nav__link">Рћ РїСЂР°Р·РґРЅРёРєРµ</a></li>
+          <li class="nav__item"><a href="#countdown" class="nav__link">РўР°Р№РјРµСЂ</a></li>
+          <li class="nav__item"><a href="#offers" class="nav__link">РџСЂРµРґР»РѕР¶РµРЅРёСЏ</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">РљРѕРЅС‚Р°РєС‚С‹</a></li>
         </ul>
       </nav>
-      <button class="snow-toggle" id="snowToggle" aria-label="Управление снегом" title="Вкл/Выкл снег">
-        <span class="snow-toggle__icon">❄️</span>
+      <button class="snow-toggle" id="snowToggle" aria-label="РЈРїСЂР°РІР»РµРЅРёРµ СЃРЅРµРіРѕРј" title="Р’РєР»/Р’С‹РєР» СЃРЅРµРі">
+        <span class="snow-toggle__icon">вќ„пёЏ</span>
       </button>
-      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+      <button class="menu-toggle" id="menuToggle" aria-label="РћС‚РєСЂС‹С‚СЊ РјРµРЅСЋ" aria-expanded="false">
         <span class="menu-toggle__line"></span>
         <span class="menu-toggle__line"></span>
         <span class="menu-toggle__line"></span>
@@ -222,17 +221,17 @@
     <div class="hero__container container">
       <div class="hero__content" data-animate="fade-up">
         <p class="hero__subtitle">
-          <span>✨</span> <span>Встречайте Новый 2026 год</span>
+          <span>вњЁ</span> <span>Р’СЃС‚СЂРµС‡Р°Р№С‚Рµ РќРѕРІС‹Р№ 2026 РіРѕРґ</span>
         </p>
-        <h1 class="hero__title">Волшебство начинается здесь</h1>
-        <p class="hero__description">Погрузитесь в атмосферу праздника, исполните самые заветные желания и создайте
-          незабываемые воспоминания вместе с близкими. Новый год — это время чудес!</p>
+        <h1 class="hero__title">Р’РѕР»С€РµР±СЃС‚РІРѕ РЅР°С‡РёРЅР°РµС‚СЃСЏ Р·РґРµСЃСЊ</h1>
+        <p class="hero__description">РџРѕРіСЂСѓР·РёС‚РµСЃСЊ РІ Р°С‚РјРѕСЃС„РµСЂСѓ РїСЂР°Р·РґРЅРёРєР°, РёСЃРїРѕР»РЅРёС‚Рµ СЃР°РјС‹Рµ Р·Р°РІРµС‚РЅС‹Рµ Р¶РµР»Р°РЅРёСЏ Рё СЃРѕР·РґР°Р№С‚Рµ
+          РЅРµР·Р°Р±С‹РІР°РµРјС‹Рµ РІРѕСЃРїРѕРјРёРЅР°РЅРёСЏ РІРјРµСЃС‚Рµ СЃ Р±Р»РёР·РєРёРјРё. РќРѕРІС‹Р№ РіРѕРґ вЂ” СЌС‚Рѕ РІСЂРµРјСЏ С‡СѓРґРµСЃ!</p>
         <div class="buttons-wrapper">
           <a href="#gallery" class="btn btn--primary-christmas" data-action="explore">
-            <span class="btn__content"><span>❄️</span> <span>Узнать больше</span> <span>→</span></span>
+            <span class="btn__content"><span>вќ„пёЏ</span> <span>РЈР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ</span> <span>в†’</span></span>
           </a>
           <button class="btn btn--christmas" data-modal="booking">
-            <span class="btn__content"><span>🎄</span> <span>НАЧАТЬ ПРАЗДНИК</span> <span>🎄</span></span>
+            <span class="btn__content"><span>рџЋ„</span> <span>РќРђР§РђРўР¬ РџР РђР—Р”РќРРљ</span> <span>рџЋ„</span></span>
           </button>
         </div>
       </div>
@@ -241,7 +240,7 @@
           <div class="hero__placeholder"
             style="width:100%;height:100%;background:radial-gradient(circle, rgba(255,215,0,0.2) 0%, transparent 70%);border-radius:50%;">
           </div>
-          <div id="lottie-container" data-src="/animations/cristmas-tree.json"
+          <div id="lottie-container" data-src="animations/cristmas-tree.json"
             style="width: clamp(280px, 50vw, 600px); height: clamp(280px, 50vw, 600px); position: absolute; top: 0;">
           </div>
           <div class="hero__decoration hero__decoration--1"></div>
@@ -255,82 +254,82 @@
   <section class="features section">
     <div class="container">
       <div class="section__header" data-animate="fade-up">
-        <p class="section__subtitle">Почему мы?</p>
-        <h2 class="section__title">Создаём новогоднее настроение</h2>
+        <p class="section__subtitle">РџРѕС‡РµРјСѓ РјС‹?</p>
+        <h2 class="section__title">РЎРѕР·РґР°С‘Рј РЅРѕРІРѕРіРѕРґРЅРµРµ РЅР°СЃС‚СЂРѕРµРЅРёРµ</h2>
         <p class="section__description">
-          Мы предлагаем уникальные возможности для создания незабываемого праздника
+          РњС‹ РїСЂРµРґР»Р°РіР°РµРј СѓРЅРёРєР°Р»СЊРЅС‹Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРµР·Р°Р±С‹РІР°РµРјРѕРіРѕ РїСЂР°Р·РґРЅРёРєР°
         </p>
       </div>
 
       <div class="features__grid">
         <article class="feature-card" data-animate="fade-up" data-delay="0">
           <div class="feature-card__content">
-            <div class="lazy-lottie" src="/animations/box.json" background="transparent" speed="1"
+            <div class="lazy-lottie" src="animations/box.json" background="transparent" speed="1"
               style="width: 120px; height: 120px;" loop autoplay>
             </div>
-            <h3 class="feature-card__title">Уникальные подарки</h3>
+            <h3 class="feature-card__title">РЈРЅРёРєР°Р»СЊРЅС‹Рµ РїРѕРґР°СЂРєРё</h3>
             <p class="feature-card__description">
-              Широкий выбор праздничных подарков для всей семьи. Каждый найдёт что-то особенное для своих близких.
+              РЁРёСЂРѕРєРёР№ РІС‹Р±РѕСЂ РїСЂР°Р·РґРЅРёС‡РЅС‹С… РїРѕРґР°СЂРєРѕРІ РґР»СЏ РІСЃРµР№ СЃРµРјСЊРё. РљР°Р¶РґС‹Р№ РЅР°Р№РґС‘С‚ С‡С‚Рѕ-С‚Рѕ РѕСЃРѕР±РµРЅРЅРѕРµ РґР»СЏ СЃРІРѕРёС… Р±Р»РёР·РєРёС….
             </p>
           </div>
         </article>
 
         <article class="feature-card" data-animate="fade-up" data-delay="100">
           <div class="feature-card__content">
-            <div class="lazy-lottie" src="/animations/decoration.json" background="transparent" speed="1"
+            <div class="lazy-lottie" src="animations/decoration.json" background="transparent" speed="1"
               style="width: 120px; height: 120px;" loop autoplay>
             </div>
-            <h3 class="feature-card__title">Праздничное оформление</h3>
+            <h3 class="feature-card__title">РџСЂР°Р·РґРЅРёС‡РЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ</h3>
             <p class="feature-card__description">
-              Профессиональный декор, который превратит ваш дом в настоящую зимнюю сказку с волшебной атмосферой.
+              РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹Р№ РґРµРєРѕСЂ, РєРѕС‚РѕСЂС‹Р№ РїСЂРµРІСЂР°С‚РёС‚ РІР°С€ РґРѕРј РІ РЅР°СЃС‚РѕСЏС‰СѓСЋ Р·РёРјРЅСЋСЋ СЃРєР°Р·РєСѓ СЃ РІРѕР»С€РµР±РЅРѕР№ Р°С‚РјРѕСЃС„РµСЂРѕР№.
             </p>
           </div>
         </article>
 
         <article class="feature-card" data-animate="fade-up" data-delay="200">
           <div class="feature-card__content">
-            <div class="lazy-lottie" src="/animations/santa.json" background="transparent" speed="1"
+            <div class="lazy-lottie" src="animations/santa.json" background="transparent" speed="1"
               style="width: 120px; height: 120px;" loop autoplay>
             </div>
-            <h3 class="feature-card__title">Встреча с Дедом Морозом</h3>
+            <h3 class="feature-card__title">Р’СЃС‚СЂРµС‡Р° СЃ Р”РµРґРѕРј РњРѕСЂРѕР·РѕРј</h3>
             <p class="feature-card__description">
-              Незабываемые встречи с главным волшебником праздника. Поздравления, подарки и исполнение желаний.
+              РќРµР·Р°Р±С‹РІР°РµРјС‹Рµ РІСЃС‚СЂРµС‡Рё СЃ РіР»Р°РІРЅС‹Рј РІРѕР»С€РµР±РЅРёРєРѕРј РїСЂР°Р·РґРЅРёРєР°. РџРѕР·РґСЂР°РІР»РµРЅРёСЏ, РїРѕРґР°СЂРєРё Рё РёСЃРїРѕР»РЅРµРЅРёРµ Р¶РµР»Р°РЅРёР№.
             </p>
           </div>
         </article>
 
         <article class="feature-card" data-animate="fade-up" data-delay="300">
           <div class="feature-card__content">
-            <div class="lazy-lottie" src="/animations/celebration.json" background="transparent" speed="1"
+            <div class="lazy-lottie" src="animations/celebration.json" background="transparent" speed="1"
               style="width: 120px; height: 120px;" loop autoplay>
             </div>
-            <h3 class="feature-card__title">Организация праздников</h3>
+            <h3 class="feature-card__title">РћСЂРіР°РЅРёР·Р°С†РёСЏ РїСЂР°Р·РґРЅРёРєРѕРІ</h3>
             <p class="feature-card__description">
-              Полный комплекс услуг по организации новогодних корпоративов, семейных торжеств и детских праздников.
+              РџРѕР»РЅС‹Р№ РєРѕРјРїР»РµРєСЃ СѓСЃР»СѓРі РїРѕ РѕСЂРіР°РЅРёР·Р°С†РёРё РЅРѕРІРѕРіРѕРґРЅРёС… РєРѕСЂРїРѕСЂР°С‚РёРІРѕРІ, СЃРµРјРµР№РЅС‹С… С‚РѕСЂР¶РµСЃС‚РІ Рё РґРµС‚СЃРєРёС… РїСЂР°Р·РґРЅРёРєРѕРІ.
             </p>
           </div>
         </article>
 
         <article class="feature-card" data-animate="fade-up" data-delay="400">
           <div class="feature-card__content">
-            <div class="lazy-lottie" src="/animations/winter.json" background="transparent" speed="1"
+            <div class="lazy-lottie" src="animations/winter.json" background="transparent" speed="1"
               style="width: 120px; height: 120px;" loop autoplay>
             </div>
-            <h3 class="feature-card__title">Зимние развлечения</h3>
+            <h3 class="feature-card__title">Р—РёРјРЅРёРµ СЂР°Р·РІР»РµС‡РµРЅРёСЏ</h3>
             <p class="feature-card__description">
-              Катки, горки, снежные городки и множество других активностей для всей семьи в праздничные дни.
+              РљР°С‚РєРё, РіРѕСЂРєРё, СЃРЅРµР¶РЅС‹Рµ РіРѕСЂРѕРґРєРё Рё РјРЅРѕР¶РµСЃС‚РІРѕ РґСЂСѓРіРёС… Р°РєС‚РёРІРЅРѕСЃС‚РµР№ РґР»СЏ РІСЃРµР№ СЃРµРјСЊРё РІ РїСЂР°Р·РґРЅРёС‡РЅС‹Рµ РґРЅРё.
             </p>
           </div>
         </article>
 
         <article class="feature-card" data-animate="fade-up" data-delay="500">
           <div class="feature-card__content">
-            <div class="lazy-lottie" src="/animations/fireworks.json" background="transparent" speed="1"
+            <div class="lazy-lottie" src="animations/fireworks.json" background="transparent" speed="1"
               style="width: 120px; height: 120px;" loop autoplay>
             </div>
-            <h3 class="feature-card__title">Фейерверки и шоу</h3>
+            <h3 class="feature-card__title">Р¤РµР№РµСЂРІРµСЂРєРё Рё С€РѕСѓ</h3>
             <p class="feature-card__description">
-              Грандиозные пиротехнические шоу, световые представления и другие яркие развлечения на любой вкус.
+              Р“СЂР°РЅРґРёРѕР·РЅС‹Рµ РїРёСЂРѕС‚РµС…РЅРёС‡РµСЃРєРёРµ С€РѕСѓ, СЃРІРµС‚РѕРІС‹Рµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ Рё РґСЂСѓРіРёРµ СЏСЂРєРёРµ СЂР°Р·РІР»РµС‡РµРЅРёСЏ РЅР° Р»СЋР±РѕР№ РІРєСѓСЃ.
             </p>
           </div>
         </article>
@@ -343,163 +342,163 @@
   <section class="gallery section" id="gallery" style="content-visibility:auto;contain-intrinsic-size:0 800px;">
     <div class="container">
       <div class="section__header" data-animate="fade-up">
-        <p class="section__subtitle">Наши праздники</p>
-        <h2 class="section__title">Галерея волшебных моментов</h2>
+        <p class="section__subtitle">РќР°С€Рё РїСЂР°Р·РґРЅРёРєРё</p>
+        <h2 class="section__title">Р“Р°Р»РµСЂРµСЏ РІРѕР»С€РµР±РЅС‹С… РјРѕРјРµРЅС‚РѕРІ</h2>
         <p class="section__description">
-          Посмотрите, как мы создаём незабываемую атмосферу праздника
+          РџРѕСЃРјРѕС‚СЂРёС‚Рµ, РєР°Рє РјС‹ СЃРѕР·РґР°С‘Рј РЅРµР·Р°Р±С‹РІР°РµРјСѓСЋ Р°С‚РјРѕСЃС„РµСЂСѓ РїСЂР°Р·РґРЅРёРєР°
         </p>
       </div>
 
       <div class="gallery__grid" id="galleryGrid">
         <div class="gallery__item gallery__item--tall" data-animate="zoom-in" data-delay="0">
-          <img src="/images/room-800.webp" alt="Новогодняя ёлка с украшениями и гирляндами" width="800" height="600"
+          <img src="images/room-800.webp" alt="РќРѕРІРѕРіРѕРґРЅСЏСЏ С‘Р»РєР° СЃ СѓРєСЂР°С€РµРЅРёСЏРјРё Рё РіРёСЂР»СЏРЅРґР°РјРё" width="800" height="600"
             loading="lazy" decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Праздничное оформление</span>
-            <button class="gallery__zoom" data-lightbox="0" aria-label="Увеличить: Праздничное оформление">
+            <span class="gallery__caption">РџСЂР°Р·РґРЅРёС‡РЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ</span>
+            <button class="gallery__zoom" data-lightbox="0" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РџСЂР°Р·РґРЅРёС‡РЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item gallery__item--tall" data-animate="zoom-in" data-delay="100">
-          <img src="/images/grendsnow-800.webp" alt="Дед Мороз с подарками" width="800" height="600" loading="lazy"
+          <img src="images/grendsnow-800.webp" alt="Р”РµРґ РњРѕСЂРѕР· СЃ РїРѕРґР°СЂРєР°РјРё" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Встреча с Дедом Морозом</span>
-            <button class="gallery__zoom" data-lightbox="1" aria-label="Увеличить: Встреча с Дедом Морозом">
+            <span class="gallery__caption">Р’СЃС‚СЂРµС‡Р° СЃ Р”РµРґРѕРј РњРѕСЂРѕР·РѕРј</span>
+            <button class="gallery__zoom" data-lightbox="1" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: Р’СЃС‚СЂРµС‡Р° СЃ Р”РµРґРѕРј РњРѕСЂРѕР·РѕРј">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="200">
-          <img src="/images/prezents-800.webp" alt="Новогодние подарки" width="800" height="600" loading="lazy"
+          <img src="images/prezents-800.webp" alt="РќРѕРІРѕРіРѕРґРЅРёРµ РїРѕРґР°СЂРєРё" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Подарки для близких</span>
-            <button class="gallery__zoom" data-lightbox="2" aria-label="Увеличить: Подарки для близких">
+            <span class="gallery__caption">РџРѕРґР°СЂРєРё РґР»СЏ Р±Р»РёР·РєРёС…</span>
+            <button class="gallery__zoom" data-lightbox="2" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РџРѕРґР°СЂРєРё РґР»СЏ Р±Р»РёР·РєРёС…">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="300">
-          <img src="/images/children-800.webp" alt="Уютный семейный праздник" width="800" height="600" loading="lazy"
+          <img src="images/children-800.webp" alt="РЈСЋС‚РЅС‹Р№ СЃРµРјРµР№РЅС‹Р№ РїСЂР°Р·РґРЅРёРє" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Cемейный праздник</span>
-            <button class="gallery__zoom" data-lightbox="3" aria-label="Увеличить: Семейный праздник">
+            <span class="gallery__caption">CРµРјРµР№РЅС‹Р№ РїСЂР°Р·РґРЅРёРє</span>
+            <button class="gallery__zoom" data-lightbox="3" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РЎРµРјРµР№РЅС‹Р№ РїСЂР°Р·РґРЅРёРє">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item gallery__item--wide" data-animate="zoom-in" data-delay="400">
-          <img src="/images/korparat-800.webp" alt="Корпоративный праздник" width="800" height="600" loading="lazy"
+          <img src="images/korparat-800.webp" alt="РљРѕСЂРїРѕСЂР°С‚РёРІРЅС‹Р№ РїСЂР°Р·РґРЅРёРє" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Корпоративные праздники</span>
-            <button class="gallery__zoom" data-lightbox="4" aria-label="Увеличить: Корпоративные праздники">
+            <span class="gallery__caption">РљРѕСЂРїРѕСЂР°С‚РёРІРЅС‹Рµ РїСЂР°Р·РґРЅРёРєРё</span>
+            <button class="gallery__zoom" data-lightbox="4" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РљРѕСЂРїРѕСЂР°С‚РёРІРЅС‹Рµ РїСЂР°Р·РґРЅРёРєРё">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="500">
-          <img src="/images/snowgame-800.webp" alt="Детский праздник" width="800" height="600" loading="lazy"
+          <img src="images/snowgame-800.webp" alt="Р”РµС‚СЃРєРёР№ РїСЂР°Р·РґРЅРёРє" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Детские праздники</span>
-            <button class="gallery__zoom" data-lightbox="5" aria-label="Увеличить: Детские праздники">
+            <span class="gallery__caption">Р”РµС‚СЃРєРёРµ РїСЂР°Р·РґРЅРёРєРё</span>
+            <button class="gallery__zoom" data-lightbox="5" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: Р”РµС‚СЃРєРёРµ РїСЂР°Р·РґРЅРёРєРё">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="600">
-          <img src="/images/fireworks-800.webp" alt="Новогодний фейерверк" width="800" height="600" loading="lazy"
+          <img src="images/fireworks-800.webp" alt="РќРѕРІРѕРіРѕРґРЅРёР№ С„РµР№РµСЂРІРµСЂРє" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Праздничный салют</span>
-            <button class="gallery__zoom" data-lightbox="6" aria-label="Увеличить: Праздничный салют">
+            <span class="gallery__caption">РџСЂР°Р·РґРЅРёС‡РЅС‹Р№ СЃР°Р»СЋС‚</span>
+            <button class="gallery__zoom" data-lightbox="6" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РџСЂР°Р·РґРЅРёС‡РЅС‹Р№ СЃР°Р»СЋС‚">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item gallery__item--tall" data-animate="zoom-in" data-delay="700">
-          <img src="/images/snegurochka-800.webp" alt="Снегурочка" width="800" height="600" loading="lazy"
+          <img src="images/snegurochka-800.webp" alt="РЎРЅРµРіСѓСЂРѕС‡РєР°" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Волшебная Снегурочка</span>
-            <button class="gallery__zoom" data-lightbox="7" aria-label="Увеличить: Волшебная Снегурочка">
+            <span class="gallery__caption">Р’РѕР»С€РµР±РЅР°СЏ РЎРЅРµРіСѓСЂРѕС‡РєР°</span>
+            <button class="gallery__zoom" data-lightbox="7" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: Р’РѕР»С€РµР±РЅР°СЏ РЎРЅРµРіСѓСЂРѕС‡РєР°">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item gallery__item--wide" data-animate="zoom-in" data-delay="800">
-          <img src="/images/carsnow-800.webp" alt="Катание на санях" width="800" height="600" loading="lazy"
+          <img src="images/carsnow-800.webp" alt="РљР°С‚Р°РЅРёРµ РЅР° СЃР°РЅСЏС…" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Зимние сани с упряжкой</span>
-            <button class="gallery__zoom" data-lightbox="8" aria-label="Увеличить: Зимние сани с упряжкой">
+            <span class="gallery__caption">Р—РёРјРЅРёРµ СЃР°РЅРё СЃ СѓРїСЂСЏР¶РєРѕР№</span>
+            <button class="gallery__zoom" data-lightbox="8" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: Р—РёРјРЅРёРµ СЃР°РЅРё СЃ СѓРїСЂСЏР¶РєРѕР№">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="900">
-          <img src="/images/masterclass-800.webp" alt="Мастер-класс с Дедом Морозом" width="800" height="600"
+          <img src="images/masterclass-800.webp" alt="РњР°СЃС‚РµСЂ-РєР»Р°СЃСЃ СЃ Р”РµРґРѕРј РњРѕСЂРѕР·РѕРј" width="800" height="600"
             loading="lazy" decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Новогодний мастер-класс</span>
-            <button class="gallery__zoom" data-lightbox="9" aria-label="Увеличить: Новогодний мастер-класс">
+            <span class="gallery__caption">РќРѕРІРѕРіРѕРґРЅРёР№ РјР°СЃС‚РµСЂ-РєР»Р°СЃСЃ</span>
+            <button class="gallery__zoom" data-lightbox="9" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РќРѕРІРѕРіРѕРґРЅРёР№ РјР°СЃС‚РµСЂ-РєР»Р°СЃСЃ">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="1000">
-          <img src="/images/gifts-opening-800.webp" alt="Уютная рождественская атмосфера" width="800" height="600"
+          <img src="images/gifts-opening-800.webp" alt="РЈСЋС‚РЅР°СЏ СЂРѕР¶РґРµСЃС‚РІРµРЅСЃРєР°СЏ Р°С‚РјРѕСЃС„РµСЂР°" width="800" height="600"
             loading="lazy" decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Волшебство у камина</span>
-            <button class="gallery__zoom" data-lightbox="10" aria-label="Увеличить: Волшебство у камина">
+            <span class="gallery__caption">Р’РѕР»С€РµР±СЃС‚РІРѕ Сѓ РєР°РјРёРЅР°</span>
+            <button class="gallery__zoom" data-lightbox="10" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: Р’РѕР»С€РµР±СЃС‚РІРѕ Сѓ РєР°РјРёРЅР°">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="1100">
-          <img src="/images/table-800.webp" alt="Праздничный стол со сладостями" width="800" height="600" loading="lazy"
+          <img src="images/table-800.webp" alt="РџСЂР°Р·РґРЅРёС‡РЅС‹Р№ СЃС‚РѕР» СЃРѕ СЃР»Р°РґРѕСЃС‚СЏРјРё" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Сладкий стол</span>
-            <button class="gallery__zoom" data-lightbox="11" aria-label="Увеличить: Сладкий стол">
+            <span class="gallery__caption">РЎР»Р°РґРєРёР№ СЃС‚РѕР»</span>
+            <button class="gallery__zoom" data-lightbox="11" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РЎР»Р°РґРєРёР№ СЃС‚РѕР»">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item gallery__item--wide" data-animate="zoom-in" data-delay="1200">
-          <img src="/images/outdoor-800.webp" alt="Новогоднее украшение дома" width="800" height="600" loading="lazy"
+          <img src="images/outdoor-800.webp" alt="РќРѕРІРѕРіРѕРґРЅРµРµ СѓРєСЂР°С€РµРЅРёРµ РґРѕРјР°" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Праздничное оформление</span>
-            <button class="gallery__zoom" data-lightbox="12" aria-label="Увеличить: Праздничное оформление">
+            <span class="gallery__caption">РџСЂР°Р·РґРЅРёС‡РЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ</span>
+            <button class="gallery__zoom" data-lightbox="12" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РџСЂР°Р·РґРЅРёС‡РЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
         </div>
 
         <div class="gallery__item" data-animate="zoom-in" data-delay="1300">
-          <img src="/images/city-lights-800.webp" alt="Новогодние огни города" width="800" height="600" loading="lazy"
+          <img src="images/city-lights-800.webp" alt="РќРѕРІРѕРіРѕРґРЅРёРµ РѕРіРЅРё РіРѕСЂРѕРґР°" width="800" height="600" loading="lazy"
             decoding="async" class="gallery__image">
           <div class="gallery__overlay">
-            <span class="gallery__caption">Новогодняя иллюминация</span>
-            <button class="gallery__zoom" data-lightbox="13" aria-label="Увеличить: Новогодняя иллюминация">
+            <span class="gallery__caption">РќРѕРІРѕРіРѕРґРЅСЏСЏ РёР»Р»СЋРјРёРЅР°С†РёСЏ</span>
+            <button class="gallery__zoom" data-lightbox="13" aria-label="РЈРІРµР»РёС‡РёС‚СЊ: РќРѕРІРѕРіРѕРґРЅСЏСЏ РёР»Р»СЋРјРёРЅР°С†РёСЏ">
               <i class="fas fa-search-plus"></i>
             </button>
           </div>
@@ -513,17 +512,17 @@
     style="content-visibility:auto;contain-intrinsic-size:0 600px;">
     <div class="container">
       <div class="section__header" data-animate="fade-up">
-        <p class="section__subtitle">Живые эмоции</p>
-        <h2 class="section__title">Видео с наших праздников</h2>
+        <p class="section__subtitle">Р–РёРІС‹Рµ СЌРјРѕС†РёРё</p>
+        <h2 class="section__title">Р’РёРґРµРѕ СЃ РЅР°С€РёС… РїСЂР°Р·РґРЅРёРєРѕРІ</h2>
         <p class="section__description">
-          Окунитесь в атмосферу настоящего новогоднего волшебства
+          РћРєСѓРЅРёС‚РµСЃСЊ РІ Р°С‚РјРѕСЃС„РµСЂСѓ РЅР°СЃС‚РѕСЏС‰РµРіРѕ РЅРѕРІРѕРіРѕРґРЅРµРіРѕ РІРѕР»С€РµР±СЃС‚РІР°
         </p>
       </div>
 
       <div class="video-gallery__grid">
         <div class="video-card" data-animate="fade-up" data-delay="0">
           <div class="video-card__preview">
-            <img src="/images/video-thumb-1-800.webp" alt="Корпоративный праздник" width="640" height="360"
+            <img src="images/video-thumb-1-800.webp" alt="РљРѕСЂРїРѕСЂР°С‚РёРІРЅС‹Р№ РїСЂР°Р·РґРЅРёРє" width="640" height="360"
               loading="lazy" decoding="async">
             <div class="video-card__play">
               <i class="fas fa-play"></i>
@@ -531,17 +530,17 @@
             <span class="video-card__duration">3:45</span>
           </div>
           <div class="video-card__content">
-            <h3 class="video-card__title">Корпоратив компании "Северное сияние"</h3>
+            <h3 class="video-card__title">РљРѕСЂРїРѕСЂР°С‚РёРІ РєРѕРјРїР°РЅРёРё "РЎРµРІРµСЂРЅРѕРµ СЃРёСЏРЅРёРµ"</h3>
             <p class="video-card__meta">
-              <span><i class="fas fa-calendar"></i> Декабрь 2024</span>
-              <span><i class="fas fa-users"></i> 150 гостей</span>
+              <span><i class="fas fa-calendar"></i> Р”РµРєР°Р±СЂСЊ 2024</span>
+              <span><i class="fas fa-users"></i> 150 РіРѕСЃС‚РµР№</span>
             </p>
           </div>
         </div>
 
         <div class="video-card" data-animate="fade-up" data-delay="100">
           <div class="video-card__preview">
-            <img src="/images/video-thumb-2-800.webp" alt="Детский праздник" width="640" height="360" loading="lazy"
+            <img src="images/video-thumb-2-800.webp" alt="Р”РµС‚СЃРєРёР№ РїСЂР°Р·РґРЅРёРє" width="640" height="360" loading="lazy"
               decoding="async">
             <div class="video-card__play">
               <i class="fas fa-play"></i>
@@ -549,17 +548,17 @@
             <span class="video-card__duration">5:20</span>
           </div>
           <div class="video-card__content">
-            <h3 class="video-card__title">Детская ёлка в ТРЦ "Зимняя сказка"</h3>
+            <h3 class="video-card__title">Р”РµС‚СЃРєР°СЏ С‘Р»РєР° РІ РўР Р¦ "Р—РёРјРЅСЏСЏ СЃРєР°Р·РєР°"</h3>
             <p class="video-card__meta">
-              <span><i class="fas fa-calendar"></i> Декабрь 2024</span>
-              <span><i class="fas fa-child"></i> 200 детей</span>
+              <span><i class="fas fa-calendar"></i> Р”РµРєР°Р±СЂСЊ 2024</span>
+              <span><i class="fas fa-child"></i> 200 РґРµС‚РµР№</span>
             </p>
           </div>
         </div>
 
         <div class="video-card" data-animate="fade-up" data-delay="200">
           <div class="video-card__preview">
-            <img src="/images/video-thumb-3-800.webp" alt="Семейный праздник" width="640" height="360" loading="lazy"
+            <img src="images/video-thumb-3-800.webp" alt="РЎРµРјРµР№РЅС‹Р№ РїСЂР°Р·РґРЅРёРє" width="640" height="360" loading="lazy"
               decoding="async">
             <div class="video-card__play">
               <i class="fas fa-play"></i>
@@ -567,10 +566,10 @@
             <span class="video-card__duration">4:15</span>
           </div>
           <div class="video-card__content">
-            <h3 class="video-card__title">Семейное торжество Петровых</h3>
+            <h3 class="video-card__title">РЎРµРјРµР№РЅРѕРµ С‚РѕСЂР¶РµСЃС‚РІРѕ РџРµС‚СЂРѕРІС‹С…</h3>
             <p class="video-card__meta">
-              <span><i class="fas fa-calendar"></i> Январь 2024</span>
-              <span><i class="fas fa-home"></i> Домашний праздник</span>
+              <span><i class="fas fa-calendar"></i> РЇРЅРІР°СЂСЊ 2024</span>
+              <span><i class="fas fa-home"></i> Р”РѕРјР°С€РЅРёР№ РїСЂР°Р·РґРЅРёРє</span>
             </p>
           </div>
         </div>
@@ -590,7 +589,7 @@
             <i class="fas fa-smile-beam"></i>
           </div>
           <div class="stat-card__number" data-count="5000">0</div>
-          <div class="stat-card__label">Счастливых гостей</div>
+          <div class="stat-card__label">РЎС‡Р°СЃС‚Р»РёРІС‹С… РіРѕСЃС‚РµР№</div>
         </div>
 
         <div class="stat-card" data-animate="zoom-in" data-delay="100">
@@ -598,7 +597,7 @@
             <i class="fas fa-calendar-check"></i>
           </div>
           <div class="stat-card__number" data-count="350">0</div>
-          <div class="stat-card__label">Проведённых праздников</div>
+          <div class="stat-card__label">РџСЂРѕРІРµРґС‘РЅРЅС‹С… РїСЂР°Р·РґРЅРёРєРѕРІ</div>
         </div>
 
         <div class="stat-card" data-animate="zoom-in" data-delay="200">
@@ -606,7 +605,7 @@
             <i class="fas fa-gift"></i>
           </div>
           <div class="stat-card__number" data-count="12000">0</div>
-          <div class="stat-card__label">Врученных подарков</div>
+          <div class="stat-card__label">Р’СЂСѓС‡РµРЅРЅС‹С… РїРѕРґР°СЂРєРѕРІ</div>
         </div>
 
         <div class="stat-card" data-animate="zoom-in" data-delay="300">
@@ -615,7 +614,7 @@
           </div>
           <div class="stat-card__number" data-count="98">0</div>
           <div class="stat-card__suffix">%</div>
-          <div class="stat-card__label">Довольных клиентов</div>
+          <div class="stat-card__label">Р”РѕРІРѕР»СЊРЅС‹С… РєР»РёРµРЅС‚РѕРІ</div>
         </div>
       </div>
     </div>
@@ -625,48 +624,48 @@
   <section class="partners section" id="partners" style="content-visibility:auto;contain-intrinsic-size:0 300px;">
     <div class="container">
       <div class="section__header" data-animate="fade-up">
-        <p class="section__subtitle">Нам доверяют</p>
-        <h2 class="section__title">Наши партнёры</h2>
+        <p class="section__subtitle">РќР°Рј РґРѕРІРµСЂСЏСЋС‚</p>
+        <h2 class="section__title">РќР°С€Рё РїР°СЂС‚РЅС‘СЂС‹</h2>
       </div>
 
       <div class="partners__slider" data-animate="fade-up">
         <div class="partners__track" style="animation: scroll 30s linear infinite !important;">
           <div class="partner-logo">
-            <img src="/images/partner-1.webp" alt="Партнёр 1" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-1.webp" alt="РџР°СЂС‚РЅС‘СЂ 1" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-2.webp" alt="Партнёр 2" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-2.webp" alt="РџР°СЂС‚РЅС‘СЂ 2" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-3.webp" alt="Партнёр 3" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-3.webp" alt="РџР°СЂС‚РЅС‘СЂ 3" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-4.webp" alt="Партнёр 4" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-4.webp" alt="РџР°СЂС‚РЅС‘СЂ 4" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-5.webp" alt="Партнёр 5" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-5.webp" alt="РџР°СЂС‚РЅС‘СЂ 5" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-6.webp" alt="Партнёр 6" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-6.webp" alt="РџР°СЂС‚РЅС‘СЂ 6" width="170" height="100" loading="lazy" decoding="async">
           </div>
-          <!-- Дублируем для бесконечной прокрутки -->
+          <!-- Р”СѓР±Р»РёСЂСѓРµРј РґР»СЏ Р±РµСЃРєРѕРЅРµС‡РЅРѕР№ РїСЂРѕРєСЂСѓС‚РєРё -->
           <div class="partner-logo">
-            <img src="/images/partner-1.webp" alt="Партнёр 1" width="170" height="100" loading="lazy" decoding="async">
-          </div>
-          <div class="partner-logo">
-            <img src="/images/partner-2.webp" alt="Партнёр 2" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-1.webp" alt="РџР°СЂС‚РЅС‘СЂ 1" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-3.webp" alt="Партнёр 3" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-2.webp" alt="РџР°СЂС‚РЅС‘СЂ 2" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-4.webp" alt="Партнёр 4" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-3.webp" alt="РџР°СЂС‚РЅС‘СЂ 3" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-5.webp" alt="Партнёр 5" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-4.webp" alt="РџР°СЂС‚РЅС‘СЂ 4" width="170" height="100" loading="lazy" decoding="async">
           </div>
           <div class="partner-logo">
-            <img src="/images/partner-6.webp" alt="Партнёр 6" width="170" height="100" loading="lazy" decoding="async">
+            <img src="images/partner-5.webp" alt="РџР°СЂС‚РЅС‘СЂ 5" width="170" height="100" loading="lazy" decoding="async">
+          </div>
+          <div class="partner-logo">
+            <img src="images/partner-6.webp" alt="РџР°СЂС‚РЅС‘СЂ 6" width="170" height="100" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
@@ -675,13 +674,13 @@
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" aria-label="Закрыть">
+    <button class="lightbox__close" aria-label="Р—Р°РєСЂС‹С‚СЊ">
       <i class="fas fa-times"></i>
     </button>
-    <button class="lightbox__prev" aria-label="Предыдущее">
+    <button class="lightbox__prev" aria-label="РџСЂРµРґС‹РґСѓС‰РµРµ">
       <i class="fas fa-chevron-left"></i>
     </button>
-    <button class="lightbox__next" aria-label="Следующее">
+    <button class="lightbox__next" aria-label="РЎР»РµРґСѓСЋС‰РµРµ">
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="lightbox__content">
@@ -697,26 +696,26 @@
   <section class="countdown section" id="countdown" style="content-visibility:auto;contain-intrinsic-size:0 400px;">
     <div class="countdown__container container">
       <div class="section__header" data-animate="fade-up">
-        <p class="section__subtitle">Время идёт</p>
-        <h2 class="section__title">До Нового 2026 года осталось</h2>
+        <p class="section__subtitle">Р’СЂРµРјСЏ РёРґС‘С‚</p>
+        <h2 class="section__title">Р”Рѕ РќРѕРІРѕРіРѕ 2026 РіРѕРґР° РѕСЃС‚Р°Р»РѕСЃСЊ</h2>
       </div>
 
       <div class="countdown__timer" id="countdownTimer" data-animate="fade-up" data-delay="200">
         <div class="countdown__item">
           <span class="countdown__number" id="days">00</span>
-          <span class="countdown__label">Дней</span>
+          <span class="countdown__label">Р”РЅРµР№</span>
         </div>
         <div class="countdown__item">
           <span class="countdown__number" id="hours">00</span>
-          <span class="countdown__label">Часов</span>
+          <span class="countdown__label">Р§Р°СЃРѕРІ</span>
         </div>
         <div class="countdown__item">
           <span class="countdown__number" id="minutes">00</span>
-          <span class="countdown__label">Минут</span>
+          <span class="countdown__label">РњРёРЅСѓС‚</span>
         </div>
         <div class="countdown__item">
           <span class="countdown__number" id="seconds">00</span>
-          <span class="countdown__label">Секунд</span>
+          <span class="countdown__label">РЎРµРєСѓРЅРґ</span>
         </div>
       </div>
     </div>
@@ -726,18 +725,18 @@
   <section class="offers section" id="offers" style="content-visibility:auto;contain-intrinsic-size:0 700px;">
     <div class="container">
       <div class="section__header" data-animate="fade-up">
-        <p class="section__subtitle">Специальные предложения</p>
-        <h2 class="section__title">Новогодние акции</h2>
+        <p class="section__subtitle">РЎРїРµС†РёР°Р»СЊРЅС‹Рµ РїСЂРµРґР»РѕР¶РµРЅРёСЏ</p>
+        <h2 class="section__title">РќРѕРІРѕРіРѕРґРЅРёРµ Р°РєС†РёРё</h2>
         <p class="section__description">
-          Воспользуйтесь выгодными предложениями и сделайте праздник ещё ярче
+          Р’РѕСЃРїРѕР»СЊР·СѓР№С‚РµСЃСЊ РІС‹РіРѕРґРЅС‹РјРё РїСЂРµРґР»РѕР¶РµРЅРёСЏРјРё Рё СЃРґРµР»Р°Р№С‚Рµ РїСЂР°Р·РґРЅРёРє РµС‰С‘ СЏСЂС‡Рµ
         </p>
       </div>
 
       <div class="offers__grid">
         <article class="offer-card" data-animate="fade-up" data-delay="0">
-          <a href="/packages/html/family.html" style="text-decoration: none; color: inherit; display: block;">
+          <a href="packages/html/family.html" style="text-decoration: none; color: inherit; display: block;">
             <div class="offer-card__image">
-              <img src="/images/pakage-1-800.webp" alt="Семейный пакет" width="400" height="300" loading="lazy"
+              <img src="images/pakage-1-800.webp" alt="РЎРµРјРµР№РЅС‹Р№ РїР°РєРµС‚" width="400" height="300" loading="lazy"
                 decoding="async">
               <span class="offer-card__badge">-30%</span>
             </div>
@@ -745,27 +744,27 @@
 
           <div class="offer-card__content">
             <h3 class="offer-card__title">
-              <a href="/packages/html/family.html" style="text-decoration: none; color: inherit;">Семейный пакет</a>
+              <a href="packages/html/family.html" style="text-decoration: none; color: inherit;">РЎРµРјРµР№РЅС‹Р№ РїР°РєРµС‚</a>
             </h3>
             <p class="offer-card__description">
-              Полный комплект для проведения семейного праздника: оформление, подарки, развлечения и праздничный стол.
+              РџРѕР»РЅС‹Р№ РєРѕРјРїР»РµРєС‚ РґР»СЏ РїСЂРѕРІРµРґРµРЅРёСЏ СЃРµРјРµР№РЅРѕРіРѕ РїСЂР°Р·РґРЅРёРєР°: РѕС„РѕСЂРјР»РµРЅРёРµ, РїРѕРґР°СЂРєРё, СЂР°Р·РІР»РµС‡РµРЅРёСЏ Рё РїСЂР°Р·РґРЅРёС‡РЅС‹Р№ СЃС‚РѕР».
             </p>
             <div class="offer-card__footer">
               <div>
-                <span class="offer-card__price">49 990₽</span>
-                <span class="offer-card__price-old">71 400₽</span>
+                <span class="offer-card__price">49 990в‚Ѕ</span>
+                <span class="offer-card__price-old">71 400в‚Ѕ</span>
               </div>
               <button class="btn btn--primary" data-modal="booking" data-package="family">
-                <span class="btn__content">Заказать</span>
+                <span class="btn__content">Р—Р°РєР°Р·Р°С‚СЊ</span>
               </button>
             </div>
           </div>
         </article>
 
         <article class="offer-card" data-animate="fade-up" data-delay="100">
-          <a href="/packages/html/corporate.html" style="text-decoration: none; color: inherit; display: block;">
+          <a href="packages/html/corporate.html" style="text-decoration: none; color: inherit; display: block;">
             <div class="offer-card__image">
-              <img src="/images/pakage-2-800.webp" alt="Корпоратив под ключ" width="400" height="300" loading="lazy"
+              <img src="images/pakage-2-800.webp" alt="РљРѕСЂРїРѕСЂР°С‚РёРІ РїРѕРґ РєР»СЋС‡" width="400" height="300" loading="lazy"
                 decoding="async">
               <span class="offer-card__badge">-25%</span>
             </div>
@@ -773,46 +772,46 @@
 
           <div class="offer-card__content">
             <h3 class="offer-card__title">
-              <a href="/packages/html/corporate.html" style="text-decoration: none; color: inherit;">Корпоратив под
-                ключ</a>
+              <a href="packages/html/corporate.html" style="text-decoration: none; color: inherit;">РљРѕСЂРїРѕСЂР°С‚РёРІ РїРѕРґ
+                РєР»СЋС‡</a>
             </h3>
             <p class="offer-card__description">
-              Организация незабываемого корпоративного праздника с ведущим, конкурсами и развлекательной программой.
+              РћСЂРіР°РЅРёР·Р°С†РёСЏ РЅРµР·Р°Р±С‹РІР°РµРјРѕРіРѕ РєРѕСЂРїРѕСЂР°С‚РёРІРЅРѕРіРѕ РїСЂР°Р·РґРЅРёРєР° СЃ РІРµРґСѓС‰РёРј, РєРѕРЅРєСѓСЂСЃР°РјРё Рё СЂР°Р·РІР»РµРєР°С‚РµР»СЊРЅРѕР№ РїСЂРѕРіСЂР°РјРјРѕР№.
             </p>
             <div class="offer-card__footer">
               <div>
-                <span class="offer-card__price">89 990₽</span>
-                <span class="offer-card__price-old">119 990₽</span>
+                <span class="offer-card__price">89 990в‚Ѕ</span>
+                <span class="offer-card__price-old">119 990в‚Ѕ</span>
               </div>
               <button class="btn btn--primary" data-modal="booking" data-package="corporate">
-                <span class="btn__content">Заказать</span>
+                <span class="btn__content">Р—Р°РєР°Р·Р°С‚СЊ</span>
               </button>
             </div>
           </div>
         </article>
 
         <article class="offer-card" data-animate="fade-up" data-delay="200">
-          <a href="/packages/html/kids.html" class="offer-card__link" aria-label="Подробнее о Детском празднике">
+          <a href="packages/html/kids.html" class="offer-card__link" aria-label="РџРѕРґСЂРѕР±РЅРµРµ Рѕ Р”РµС‚СЃРєРѕРј РїСЂР°Р·РґРЅРёРєРµ">
             <div class="offer-card__image">
-              <img src="/images/pakage-3-800.webp" alt="Детский праздник" width="400" height="300" loading="lazy"
+              <img src="images/pakage-3-800.webp" alt="Р”РµС‚СЃРєРёР№ РїСЂР°Р·РґРЅРёРє" width="400" height="300" loading="lazy"
                 decoding="async">
               <span class="offer-card__badge">-40%</span>
             </div>
           </a>
           <div class="offer-card__content">
             <h3 class="offer-card__title">
-              <a href="/packages/html/kids.html" class="offer-card__title-link">Детский праздник</a>
+              <a href="packages/html/kids.html" class="offer-card__title-link">Р”РµС‚СЃРєРёР№ РїСЂР°Р·РґРЅРёРє</a>
             </h3>
             <p class="offer-card__description">
-              Волшебное представление с Дедом Морозом и Снегурочкой, включая игры, конкурсы и сладкие подарки для детей.
+              Р’РѕР»С€РµР±РЅРѕРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ СЃ Р”РµРґРѕРј РњРѕСЂРѕР·РѕРј Рё РЎРЅРµРіСѓСЂРѕС‡РєРѕР№, РІРєР»СЋС‡Р°СЏ РёРіСЂС‹, РєРѕРЅРєСѓСЂСЃС‹ Рё СЃР»Р°РґРєРёРµ РїРѕРґР°СЂРєРё РґР»СЏ РґРµС‚РµР№.
             </p>
             <div class="offer-card__footer">
               <div>
-                <span class="offer-card__price">29 990₽</span>
-                <span class="offer-card__price-old">49 990₽</span>
+                <span class="offer-card__price">29 990в‚Ѕ</span>
+                <span class="offer-card__price-old">49 990в‚Ѕ</span>
               </div>
               <button class="btn btn--primary" data-modal="booking" data-package="kids">
-                <span class="btn__content">Заказать</span>
+                <span class="btn__content">Р—Р°РєР°Р·Р°С‚СЊ</span>
               </button>
             </div>
           </div>
@@ -824,14 +823,14 @@
   <!-- CTA SECTION -->
   <section class="cta section" style="content-visibility:auto;contain-intrinsic-size:0 300px;">
     <div class="cta__container container" data-animate="fade-up">
-      <h2 class="cta__title">Готовы к волшебству?</h2>
+      <h2 class="cta__title">Р“РѕС‚РѕРІС‹ Рє РІРѕР»С€РµР±СЃС‚РІСѓ?</h2>
       <p class="cta__description">
-        Забронируйте своё место на празднике уже сегодня и получите эксклюзивные бонусы!
+        Р—Р°Р±СЂРѕРЅРёСЂСѓР№С‚Рµ СЃРІРѕС‘ РјРµСЃС‚Рѕ РЅР° РїСЂР°Р·РґРЅРёРєРµ СѓР¶Рµ СЃРµРіРѕРґРЅСЏ Рё РїРѕР»СѓС‡РёС‚Рµ СЌРєСЃРєР»СЋР·РёРІРЅС‹Рµ Р±РѕРЅСѓСЃС‹!
       </p>
       <button class="btn cta__button" data-modal="booking">
         <span class="btn__content">
-          <span>Забронировать сейчас</span>
-          <span>🎄</span>
+          <span>Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ СЃРµР№С‡Р°СЃ</span>
+          <span>рџЋ„</span>
         </span>
       </button>
     </div>
@@ -842,13 +841,13 @@
     <div class="container">
       <div class="footer__container">
         <div class="footer__section" data-animate="fade-up" data-delay="0">
-          <h3 class="footer__title">О нас</h3>
+          <h3 class="footer__title">Рћ РЅР°СЃ</h3>
           <p class="footer__text">
-            Мы создаём незабываемые новогодние праздники с 2010 года. Наша миссия — дарить радость и волшебство каждой
-            семье.
+            РњС‹ СЃРѕР·РґР°С‘Рј РЅРµР·Р°Р±С‹РІР°РµРјС‹Рµ РЅРѕРІРѕРіРѕРґРЅРёРµ РїСЂР°Р·РґРЅРёРєРё СЃ 2010 РіРѕРґР°. РќР°С€Р° РјРёСЃСЃРёСЏ вЂ” РґР°СЂРёС‚СЊ СЂР°РґРѕСЃС‚СЊ Рё РІРѕР»С€РµР±СЃС‚РІРѕ РєР°Р¶РґРѕР№
+            СЃРµРјСЊРµ.
           </p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="ВКонтакте">
+            <a href="#" class="social-link" aria-label="Р’РљРѕРЅС‚Р°РєС‚Рµ">
               <span>VK</span>
             </a>
             <a href="#" class="social-link" aria-label="Telegram">
@@ -864,44 +863,44 @@
         </div>
 
         <div class="footer__section" data-animate="fade-up" data-delay="100">
-          <h3 class="footer__title">Навигация</h3>
+          <h3 class="footer__title">РќР°РІРёРіР°С†РёСЏ</h3>
           <ul class="footer__links">
-            <li><a href="#hero" class="footer__link">→ Главная</a></li>
-            <li><a href="#video-gallery" class="footer__link">→ О празднике</a></li>
-            <li><a href="#gallery" class="footer__link">→ Галерея</a></li>
-            <li><a href="#countdown" class="footer__link">→ Таймер</a></li>
-            <li><a href="#offers" class="footer__link">→ Предложения</a></li>
-            <li><a href="#contact" class="footer__link">→ Контакты</a></li>
+            <li><a href="#hero" class="footer__link">в†’ Р“Р»Р°РІРЅР°СЏ</a></li>
+            <li><a href="#video-gallery" class="footer__link">в†’ Рћ РїСЂР°Р·РґРЅРёРєРµ</a></li>
+            <li><a href="#gallery" class="footer__link">в†’ Р“Р°Р»РµСЂРµСЏ</a></li>
+            <li><a href="#countdown" class="footer__link">в†’ РўР°Р№РјРµСЂ</a></li>
+            <li><a href="#offers" class="footer__link">в†’ РџСЂРµРґР»РѕР¶РµРЅРёСЏ</a></li>
+            <li><a href="#contact" class="footer__link">в†’ РљРѕРЅС‚Р°РєС‚С‹</a></li>
           </ul>
         </div>
 
         <div class="footer__section" data-animate="fade-up" data-delay="200">
-          <h3 class="footer__title">Услуги</h3>
+          <h3 class="footer__title">РЈСЃР»СѓРіРё</h3>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">→ Организация праздников</a></li>
-            <li><a href="#" class="footer__link">→ Праздничное оформление</a></li>
-            <li><a href="#" class="footer__link">→ Дед Мороз и Снегурочка</a></li>
-            <li><a href="#" class="footer__link">→ Фейерверки</a></li>
-            <li><a href="#" class="footer__link">→ Подарки</a></li>
+            <li><a href="#" class="footer__link">в†’ РћСЂРіР°РЅРёР·Р°С†РёСЏ РїСЂР°Р·РґРЅРёРєРѕРІ</a></li>
+            <li><a href="#" class="footer__link">в†’ РџСЂР°Р·РґРЅРёС‡РЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ</a></li>
+            <li><a href="#" class="footer__link">в†’ Р”РµРґ РњРѕСЂРѕР· Рё РЎРЅРµРіСѓСЂРѕС‡РєР°</a></li>
+            <li><a href="#" class="footer__link">в†’ Р¤РµР№РµСЂРІРµСЂРєРё</a></li>
+            <li><a href="#" class="footer__link">в†’ РџРѕРґР°СЂРєРё</a></li>
           </ul>
         </div>
 
         <div class="footer__section" data-animate="fade-up" data-delay="300">
-          <h3 class="footer__title">Контакты</h3>
+          <h3 class="footer__title">РљРѕРЅС‚Р°РєС‚С‹</h3>
           <ul class="footer__links">
-            <li class="footer__link">📞 +7 (999) 123-45-67</li>
-            <li class="footer__link">✉️ info@newyear2026.ru</li>
-            <li class="footer__link">📍 Москва, ул. Праздничная, 1</li>
-            <li class="footer__link">🕐 Пн-Вс: 9:00 - 21:00</li>
+            <li class="footer__link">рџ“ћ +7 (999) 123-45-67</li>
+            <li class="footer__link">вњ‰пёЏ info@newyear2026.ru</li>
+            <li class="footer__link">рџ“Ќ РњРѕСЃРєРІР°, СѓР». РџСЂР°Р·РґРЅРёС‡РЅР°СЏ, 1</li>
+            <li class="footer__link">рџ•ђ РџРЅ-Р’СЃ: 9:00 - 21:00</li>
           </ul>
         </div>
       </div>
       <button id="install-app-button" class="btn btn--outline">
-        📲 Установить приложение
+        рџ“І РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РїСЂРёР»РѕР¶РµРЅРёРµ
       </button>
 
       <div class="footer__bottom">
-        <p>&copy; 2025 Новый Год 2026. Все права защищены. Создано с любовью к праздникам ❤️</p>
+        <p>&copy; 2025 РќРѕРІС‹Р№ Р“РѕРґ 2026. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹. РЎРѕР·РґР°РЅРѕ СЃ Р»СЋР±РѕРІСЊСЋ Рє РїСЂР°Р·РґРЅРёРєР°Рј вќ¤пёЏ</p>
       </div>
     </div>
   </footer>
@@ -911,23 +910,23 @@
     <div class="modal__backdrop"></div>
     <div class="modal__container">
       <div class="modal__content">
-        <button class="modal__close" aria-label="Закрыть">
+        <button class="modal__close" aria-label="Р—Р°РєСЂС‹С‚СЊ">
           <i class="fas fa-times"></i>
         </button>
 
         <div class="modal__header">
-          <div class="modal__icon">🎄</div>
-          <h2 class="modal__title">Оставить заявку</h2>
-          <p class="modal__subtitle">Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+          <div class="modal__icon">рџЋ„</div>
+          <h2 class="modal__title">РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</h2>
+          <p class="modal__subtitle">Р—Р°РїРѕР»РЅРёС‚Рµ С„РѕСЂРјСѓ, Рё РјС‹ СЃРІСЏР¶РµРјСЃСЏ СЃ РІР°РјРё РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ</p>
         </div>
 
         <form class="form" id="bookingForm" novalidate>
           <div class="form__group">
             <label class="form__label" for="userName">
               <i class="fas fa-user"></i>
-              Ваше имя *
+              Р’Р°С€Рµ РёРјСЏ *
             </label>
-            <input type="text" class="form__input" id="userName" name="name" placeholder="Введите ваше имя" required
+            <input type="text" class="form__input" id="userName" name="name" placeholder="Р’РІРµРґРёС‚Рµ РІР°С€Рµ РёРјСЏ" required
               minlength="2" maxlength="50" autocomplete="name" aria-required="true">
             <span class="form__error" id="userNameError"></span>
           </div>
@@ -935,7 +934,7 @@
           <div class="form__group">
             <label class="form__label" for="userPhone">
               <i class="fas fa-phone"></i>
-              Телефон *
+              РўРµР»РµС„РѕРЅ *
             </label>
             <input type="tel" class="form__input" id="userPhone" name="phone" placeholder="+7 (___) ___-__-__" required
               autocomplete="tel" aria-required="true">
@@ -955,25 +954,25 @@
           <div class="form__group">
             <label class="form__label" for="partyType">
               <i class="fas fa-gift"></i>
-              Тип праздника
+              РўРёРї РїСЂР°Р·РґРЅРёРєР°
             </label>
             <select class="form__select" id="partyType" name="partyType">
-              <option value="">Выберите тип праздника</option>
-              <option value="family">Семейный праздник</option>
-              <option value="corporate">Корпоратив</option>
-              <option value="kids">Детский праздник</option>
-              <option value="wedding">Свадьба / Юбилей</option>
-              <option value="other">Другое</option>
+              <option value="">Р’С‹Р±РµСЂРёС‚Рµ С‚РёРї РїСЂР°Р·РґРЅРёРєР°</option>
+              <option value="family">РЎРµРјРµР№РЅС‹Р№ РїСЂР°Р·РґРЅРёРє</option>
+              <option value="corporate">РљРѕСЂРїРѕСЂР°С‚РёРІ</option>
+              <option value="kids">Р”РµС‚СЃРєРёР№ РїСЂР°Р·РґРЅРёРє</option>
+              <option value="wedding">РЎРІР°РґСЊР±Р° / Р®Р±РёР»РµР№</option>
+              <option value="other">Р”СЂСѓРіРѕРµ</option>
             </select>
           </div>
 
           <div class="form__group">
             <label class="form__label" for="userMessage">
               <i class="fas fa-comment"></i>
-              Комментарий
+              РљРѕРјРјРµРЅС‚Р°СЂРёР№
             </label>
             <textarea class="form__textarea" id="userMessage" name="message"
-              placeholder="Расскажите о ваших пожеланиях..." rows="3" maxlength="500"></textarea>
+              placeholder="Р Р°СЃСЃРєР°Р¶РёС‚Рµ Рѕ РІР°С€РёС… РїРѕР¶РµР»Р°РЅРёСЏС…..." rows="3" maxlength="500"></textarea>
             <span class="form__counter"><span id="messageCounter">0</span>/500</span>
           </div>
 
@@ -981,14 +980,14 @@
             <label class="form__checkbox-label">
               <input type="checkbox" class="form__checkbox" id="privacyAgree" name="privacy" required>
               <span class="form__checkbox-custom"></span>
-              <span>Я согласен с <a href="#" class="form__link">политикой конфиденциальности</a></span>
+              <span>РЇ СЃРѕРіР»Р°СЃРµРЅ СЃ <a href="#" class="form__link">РїРѕР»РёС‚РёРєРѕР№ РєРѕРЅС„РёРґРµРЅС†РёР°Р»СЊРЅРѕСЃС‚Рё</a></span>
             </label>
             <span class="form__error" id="privacyError"></span>
           </div>
 
           <button type="submit" class="btn btn--primary form__submit" id="submitBtn">
             <span class="btn__content">
-              <span class="btn__text">Отправить заявку</span>
+              <span class="btn__text">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</span>
               <span class="btn__loader"></span>
             </span>
           </button>
@@ -997,18 +996,18 @@
     </div>
   </div>
 
-  <!-- Canvas для снега -->
+  <!-- Canvas РґР»СЏ СЃРЅРµРіР° -->
   <canvas id="snowCanvas"
     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
 
-  <!-- ✅ Добавлена версия для сброса кэша браузера -->
+  <!-- вњ… Р”РѕР±Р°РІР»РµРЅР° РІРµСЂСЃРёСЏ РґР»СЏ СЃР±СЂРѕСЃР° РєСЌС€Р° Р±СЂР°СѓР·РµСЂР° -->
   <script src="js/new-year.js?v=2.6" defer></script>
 
-  <!-- Кнопка управления звуком -->
+  <!-- РљРЅРѕРїРєР° СѓРїСЂР°РІР»РµРЅРёСЏ Р·РІСѓРєРѕРј -->
   <button id="sound-toggle"
     style="position: fixed; bottom: 20px; left: 20px; width: 50px; height: 50px; border-radius: 50%; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; z-index: 1000;"
-    title="Включить/выключить музыку">
-    🔇
+    title="Р’РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ РјСѓР·С‹РєСѓ">
+    рџ”‡
   </button>
 
   <audio id="newyear-audio" preload="auto" loop style="display:none">
