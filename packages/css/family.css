@@ -1,0 +1,324 @@
+/* =========================================
+   CRITICAL FIX: Layout Reset
+   ========================================= */
+body.family-page .page-content {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* =========================================
+   Базовые настройки и Шрифты (КАК НА ГЛАВНОЙ)
+   ========================================= */
+.family-page {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    /* Основной шрифт для текста - более мягкий */
+    font-family: 'Merriweather', serif; 
+}
+
+/* Применяем шрифт Oswald ко всем заголовкам для стиля "Новый год" */
+h1, h2, h3, .section-title, .package-hero__title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; /* Делаем буквы заглавными как на главной */
+    letter-spacing: 0.05em;    /* Чуть разряжаем буквы */
+}
+
+.package-section {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif; /* Для подзаголовков оставляем засечки */
+}
+
+/* =========================================
+   HERO BLOCK
+   ========================================= */
+.package-hero {
+    padding: 140px 0 100px;
+    background: radial-gradient(circle at top right, rgba(220, 38, 38, 0.15), transparent 50%),
+                radial-gradient(circle at bottom left, rgba(37, 99, 235, 0.1), transparent 50%);
+}
+
+.package-hero__inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.package-hero__tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(220, 38, 38, 0.2);
+    color: #fca5a5;
+    border-radius: 4px; /* Чуть строже углы */
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.package-hero__title {
+    font-size: 4rem; /* Крупнее */
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5); /* Добавил тень для объема */
+}
+
+.package-hero__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.package-hero__benefits li {
+    font-family: 'Oswald', sans-serif; /* Список выгод тоже стилизуем */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.package-hero__benefits i {
+    color: #fbbf24; /* Золотой цвет иконок */
+}
+
+/* Кнопка в Hero */
+.package-hero__cta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start; /* Кнопка слева */
+}
+
+/* Карточка справа */
+.package-summary-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.package-summary-card__title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 15px;
+    text-align: center; /* Заголовок карточки по центру */
+}
+
+.package-summary-card__price {
+    display: flex;
+    justify-content: center; /* Цена по центру */
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.package-summary-card__price-current {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #fbbf24; /* Золотой */
+}
+
+/* Кнопка в карточке */
+.package-summary-card button.btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* =========================================
+   AUDIENCE SECTION
+   ========================================= */
+.package-audience__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.package-audience__ideal {
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.package-audience__ideal-title {
+    font-size: 2rem;
+    color: #fbbf24;
+    margin-bottom: 1.5rem;
+}
+
+.package-audience__list li {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    padding-left: 30px;
+    position: relative;
+}
+
+.package-audience__list li::before {
+    content: "\f00c"; /* FontAwesome check */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #dc2626;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/* =========================================
+   INCLUDES SECTION
+   ========================================= */
+.package-includes__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.includes-group {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center; /* Центруем контент в карточках */
+}
+
+.includes-group__icon {
+    font-size: 2.5rem;
+    color: #dc2626; /* Красный акцент */
+    margin-bottom: 1.5rem;
+}
+
+.includes-group__title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.includes-group__list {
+    text-align: left; /* А список оставляем слева для читаемости */
+    display: inline-block; /* Чтобы список был по центру блока, но с выравниванием текста слева */
+}
+
+/* =========================================
+   CTA SECTION (Нижний блок)
+   ========================================= */
+.cta {
+    text-align: center;
+}
+
+.cta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруем всё содержимое по горизонтали */
+    justify-content: center;
+}
+
+.cta__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.cta__button {
+    margin-top: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   FAQ
+   ========================================= */
+.faq-item__question {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   MEDIA QUERIES
+   ========================================= */
+@media (max-width: 992px) {
+    .package-hero__inner, .package-audience__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .package-hero__title {
+        font-size: 3rem;
+    }
+    
+    .package-hero__cta {
+        justify-content: center; /* На мобилках центруем кнопку в Hero */
+    }
+    
+    .package-hero__content {
+        text-align: center;
+    }
+    
+    .package-hero__benefits li {
+        justify-content: center;
+    }
+}
+
+.btn--outline-light {
+    color: gray;
+}
+
+.package-summary-card__price-old {
+    text-decoration: line-through;
+}   
+
+/* =========================================
+   FIX MODAL VISIBILITY
+   Принудительно показываем модалку, если добавлен класс active
+   ========================================= */
+.modal.active {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 99999 !important; /* Поверх всего */
+}
+
+/* Фон затемнения */
+.modal.active .modal__backdrop {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* Само окно */
+.modal.active .modal__container {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
+.btn__text {
+    margin: 0 120%;
+}

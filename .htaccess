@@ -1,0 +1,219 @@
+# ========================================
+# НОВЫЙ ГОД 2026 - ОПТИМИЗАЦИЯ ХОСТИНГА
+# ========================================
+
+# ---------------------------------------
+# 1. ВКЛЮЧИТЬ СЖАТИЕ (GZIP/DEFLATE)
+# ---------------------------------------
+<IfModule mod_deflate.c>
+    # Сжатие текстовых файлов
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom+xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+    
+    # Не сжимать уже сжатые форматы
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp|woff2|mp3)$ no-gzip dont-vary
+    
+    # Обработка прокси-серверов
+    <IfModule mod_headers.c>
+        Header append Vary Accept-Encoding
+    </IfModule>
+</IfModule>
+
+# ---------------------------------------
+# 2. КЕШИРОВАНИЕ БРАУЗЕРА
+# ---------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    
+    # HTML - без кеширования (всегда свежий контент)
+    ExpiresByType text/html "access plus 0 seconds"
+    
+    # CSS и JavaScript - 1 месяц
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # Изображения - 1 год
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Шрифты - 1 год
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    
+    # Аудио/Видео - 6 месяцев
+    ExpiresByType audio/mpeg "access plus 6 months"
+    ExpiresByType audio/ogg "access plus 6 months"
+    ExpiresByType video/mp4 "access plus 6 months"
+    ExpiresByType video/webm "access plus 6 months"
+    
+    # JSON (Lottie анимации) - 1 месяц
+    ExpiresByType application/json "access plus 1 month"
+    
+    # Manifest и Service Worker - без кеширования
+    ExpiresByType application/manifest+json "access plus 0 seconds"
+</IfModule>
+
+# ---------------------------------------
+# 3. ЗАГОЛОВКИ CACHE-CONTROL
+# ---------------------------------------
+<IfModule mod_headers.c>
+    # HTML - не кешировать
+    <FilesMatch "\\.(html|htm)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+    
+    # Изображения - кеш на год с immutable
+    <FilesMatch "\\.(webp|jpg|jpeg|png|gif|ico|svg)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
+    
+    # CSS и JS - кеш на месяц
+    <FilesMatch "\\.(css|js)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    
+    # Шрифты - кеш на год
+    <FilesMatch "\\.(woff2|woff|ttf|otf|eot)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
+    
+    # Аудио - кеш на 6 месяцев
+    <FilesMatch "\\.(mp3|ogg|wav)$">
+        Header set Cache-Control "max-age=15768000, public"
+    </FilesMatch>
+    
+    # Service Worker - не кешировать
+    <FilesMatch "service-worker\\.js$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+    </FilesMatch>
+    
+    # Manifest - не кешировать
+    <FilesMatch "manifest\\.webmanifest$">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </FilesMatch>
+    
+    # Security заголовки
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Разрешить Service Worker
+    Header set Service-Worker-Allowed "/"
+</IfModule>
+
+# ---------------------------------------
+# 4. MIME TYPES
+# ---------------------------------------
+<IfModule mod_mime.c>
+    # WebP
+    AddType image/webp .webp
+    
+    # Шрифты
+    AddType font/woff2 .woff2
+    AddType font/woff .woff
+    AddType font/ttf .ttf
+    AddType font/otf .otf
+    
+    # JSON
+    AddType application/json .json
+    
+    # Manifest
+    AddType application/manifest+json .webmanifest
+    
+    # JavaScript
+    AddType application/javascript .js
+    
+    # SVG
+    AddType image/svg+xml .svg .svgz
+    AddEncoding gzip .svgz
+</IfModule>
+
+# ---------------------------------------
+# 5. БЕЗОПАСНОСТЬ
+# ---------------------------------------
+
+# Запретить просмотр директорий
+Options -Indexes
+
+# Защита от hotlinking изображений (опционально)
+# Раскомментируй и замени yourdomain.com на свой домен
+# <IfModule mod_rewrite.c>
+#     RewriteEngine on
+#     RewriteCond %{HTTP_REFERER} !^$
+#     RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yourdomain.com [NC]
+#     RewriteRule \\.(webp|jpg|jpeg|png|gif)$ - [F]
+# </IfModule>
+
+# ---------------------------------------
+# 6. HTTPS РЕДИРЕКТ (если используется SSL)
+# ---------------------------------------
+# Раскомментируй если у тебя есть SSL сертификат
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# ---------------------------------------
+# 7. WWW РЕДИРЕКТ (опционально)
+# ---------------------------------------
+# Выбери один вариант:
+
+# Вариант A: С www на без www
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#     RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+# </IfModule>
+
+# Вариант B: Без www на с www
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTP_HOST} !^www\. [NC]
+#     RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+# </IfModule>
+
+# ---------------------------------------
+# 8. КАСТОМНЫЕ СТРАНИЦЫ ОШИБОК (опционально)
+# ---------------------------------------
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html
+
+# ---------------------------------------
+# 9. PRELOAD ЗАГОЛОВКИ (опционально)
+# ---------------------------------------
+# Можно прелоадить критичные ресурсы через заголовки
+# <IfModule mod_headers.c>
+#     <FilesMatch "index\\.html$">
+#         Header add Link "</css/new-year.css>; rel=preload; as=style"
+#         Header add Link "</js/new-year.js>; rel=preload; as=script"
+#     </FilesMatch>
+# </IfModule>
+
+# ---------------------------------------
+# КОНЕЦ ФАЙЛА
+# ---------------------------------------

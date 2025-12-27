@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Детский новогодний праздник: представление с Дедом Морозом, Снегурочкой, игры и подарки.">
+    <meta name="theme-color" content="#0f172a">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23FFD700' d='M50,5 l11,22 h23 l-18,14 l7,23 l-19,-13 l-19,13 l7,-23 l-18,-14 h23 z'/><polygon fill='%231B5E20' points='50,25 85,85 15,85'/><polygon fill='%232E7D32' points='50,20 75,65 25,65'/><polygon fill='%23388E3C' points='50,15 65,45 35,45'/><rect fill='%235D4037' x='42' y='85' width='16' height='15'/></svg>">
+    
+    <title>Детский праздник — Новый Год 2026</title>
+    
+    <!-- Шрифты и иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Merriweather:wght@300;400;700;900&amp;=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Глобальные стили -->
+    <link rel="stylesheet" href="/css/new-year.css">
+    <!-- Локальные стили для детской страницы -->
+    <link rel="stylesheet" href="/packages/css/kids.css">
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body class="kids-page">
+    
+    <div id="toastContainer" class="toast-container"></div>
+    
+    <!-- HEADER -->
+    <header class="header" id="header" style="position: sticky;">
+        <div class="header__container container">
+            <a href="/index.html" class="logo" aria-label="Главная">
+                <span class="logo__icon">🎄</span>
+                <span>Новый Год 2026</span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav__list" id="navList">
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="/index.html#gallery" class="nav__link">Галерея</a></li>
+                    <li class="nav__item"><a href="/index.html#video-gallery" class="nav__link">О празднике</a></li>
+                    <li class="nav__item"><a href="/index.html#offers" class="nav__link nav__link--active">Предложения</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <button class="snow-toggle" id="snowToggle" aria-label="Управление снегом"><span class="snow-toggle__icon">❄️</span></button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    <main class="page-content fix-layout">
+        
+        <!-- Hero-блок -->
+        <section class="package-hero" id="hero">
+            <div class="container package-hero__inner">
+                <div class="package-hero__content">
+                    <p class="package-hero__tag">Для детей</p>
+                    <h1 class="package-hero__title">Волшебный детский праздник</h1>
+                    <p class="package-hero__subtitle">
+                        Яркое представление с Дедом Морозом и Снегурочкой, игры, конкурсы и сладкие подарки для детей от 3 до 12 лет.
+                    </p>
+                    <ul class="package-hero__benefits">
+                        <li><i class="fas fa-child"></i> Для детей 3–12 лет</li>
+                        <li><i class="fas fa-star"></i> Индивидуальная программа</li>
+                        <li><i class="fas fa-gift"></i> Подарки каждому ребенку</li>
+                    </ul>
+                    <div class="package-hero__cta">
+                        <button type="button" class="btn btn--primary" data-modal="booking" data-package="kids">
+                            <span class="btn__content">Забронировать дату</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <aside class="package-hero__side">
+                    <div class="package-summary-card">
+                        <h2 class="package-summary-card__title">Кратко о пакете</h2>
+                        <ul class="package-summary-card__list">
+                            <li>Волшебное представление</li>
+                            <li>Игры и конкурсы с призами</li>
+                            <li>Фотосессия с Дедом Морозом</li>
+                            <li>Сладкие подарки каждому</li>
+                        </ul>
+                        <div class="package-summary-card__price">
+                            <span class="package-summary-card__price-current">29 990₽</span>
+                            <span class="package-summary-card__price-old">49 990₽</span>
+                        </div>
+                        <button type="button" class="btn btn--outline-light" style="width: 100%; margin-top: 15px;" data-modal="booking" data-package="kids">
+                            Заказать
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Для кого -->
+        <section class="package-section package-audience">
+            <div class="container">
+                <h2 class="section-title">Для кого этот пакет</h2>
+                <div class="package-audience__grid">
+                    <div class="package-audience__text">
+                        <p>Идеально подходит для семей с детьми, которые хотят создать незабываемую атмосферу волшебства и радости.</p>
+                        <p>Мы продумываем каждый момент, чтобы праздник был увлекательным для детей и спокойным для родителей.</p>
+                    </div>
+                    <div class="package-audience__ideal">
+                        <h3 class="package-audience__ideal-title">Идеально, если…</h3>
+                        <ul class="package-audience__list">
+                            <li>В вашей семье есть дети 3–12 лет</li>
+                            <li>Хотите праздник без подготовки</li>
+                            <li>Желаете ярких эмоций и фотографий</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Что входит -->
+        <section class="package-section package-includes">
+            <div class="container">
+                <h2 class="section-title">Что входит в стоимость</h2>
+                <div class="package-includes__grid">
+                    <article class="includes-group">
+                        <div class="includes-group__icon"><i class="fas fa-magic"></i></div>
+                        <h3 class="includes-group__title">Волшебное представление</h3>
+                        <ul class="includes-group__list">
+                            <li>Дед Мороз и Снегурочка (1 час)</li>
+                            <li>Сказка с участием детей</li>
+                            <li>Праздничные танцы и игры</li>
+                        </ul>
+                    </article>
+                    <article class="includes-group">
+                        <div class="includes-group__icon"><i class="fas fa-photo-video"></i></div>
+                        <h3 class="includes-group__title">Фотосессия</h3>
+                        <ul class="includes-group__list">
+                            <li>Фотограф на всё мероприятие</li>
+                            <li>Фотозона с новогодней тематикой</li>
+                            <li>Цифровой альбом в подарок</li>
+                        </ul>
+                    </article>
+                    <article class="includes-group">
+                        <div class="includes-group__icon"><i class="fas fa-candy-cane"></i></div>
+                        <h3 class="includes-group__title">Подарки и угощения</h3>
+                        <ul class="includes-group__list">
+                            <li>Сладкий набор каждому ребенку</li>
+                            <li>Здоровые перекусы для детей</li>
+                            <li>Персональные поздравления</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Тайминг -->
+        <section class="package-section package-timeline">
+            <div class="container">
+                <h2 class="section-title">Сценарий по времени</h2>
+                <p class="section-subtitle">Примерный план, адаптируем под возраст и пожелания детей.</p>
+                
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__time">18:00</div>
+                        <div class="timeline__content">
+                            <h3>Встреча гостей</h3>
+                            <p>Приветствие, фотосессия, начало игр.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__time">19:00</div>
+                        <div class="timeline__content">
+                            <h3>Сказка с Дедом Морозом</h3>
+                            <p>Главные герои приходят с поздравлениями и играми.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__time">20:00</div>
+                        <div class="timeline__content">
+                            <h3>Игры и подарки</h3>
+                            <p>Конкурсы, танцы, вручение сладких наборов.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__time">21:00</div>
+                        <div class="timeline__content">
+                            <h3>Завершение праздника</h3>
+                            <p>Последние фото, финальное поздравление.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="package-section package-faq">
+            <div class="container">
+                <h2 class="section-title">Частые вопросы</h2>
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-item__question">Можно ли адаптировать программу под возраст детей?</summary>
+                        <div class="faq-item__answer">
+                            <p>Да! Мы всегда учитываем возраст и интересы детей, чтобы программа была максимально увлекательной.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">Сколько длится представление?</summary>
+                        <div class="faq-item__answer">
+                            <p>Основная программа длится 1 час, но мы можем продлить по вашему желанию.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">Входит ли фотография в пакет?</summary>
+                        <div class="faq-item__answer">
+                            <p>Да, фотосессия и цифровой альбом входят в стоимость пакета.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Блок -->
+        <section class="cta section">
+            <div class="cta__container container">
+                <h2 class="cta__title">Забронировать детский праздник</h2>
+                <p class="cta__description">Оставьте заявку сейчас и получите бесплатный сладкий набор для гостей!</p>
+                <button class="btn cta__button" data-modal="booking" data-package="kids">
+                    <span class="btn__content">
+                        <span>Забронировать</span>
+                        <span>🎄</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__section">
+                    <h3 class="footer__title">О нас</h3>
+                    <p class="footer__text">Мы создаём незабываемые детские новогодние праздники с 2010 года.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__links">
+                        <li><a href="/index.html#hero" class="footer__link">→ Главная</a></li>
+                        <li><a href="/index.html#features" class="footer__link">→ О празднике</a></li>
+                        <li><a href="/index.html#offers" class="footer__link">→ Предложения</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link">📞 +7 (999) 123-45-67</li>
+                        <li class="footer__link">✉️ kids@newyear2026.ru</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Новый Год 2026.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- MODAL -->
+    <div class="modal" id="bookingModal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__container">
+            <div class="modal__content">
+                <button class="modal__close" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+                <div class="modal__header">
+                    <div class="modal__icon">👨‍🎅</div>
+                    <h2 class="modal__title">Оставить заявку</h2>
+                    <p class="modal__subtitle">Детский праздник</p>
+                </div>
+                <form class="form" id="bookingForm" novalidate>
+                    <input type="hidden" name="package" value="kids">
+                    <div class="form__group">
+                        <label class="form__label">Ваше имя *</label>
+                        <input type="text" class="form__input" name="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Телефон *</label>
+                        <input type="tel" class="form__input" name="phone" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Количество детей *</label>
+                        <input type="number" class="form__input" name="kids_count" min="1" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Возраст детей (пример: 5, 8)</label>
+                        <input type="text" class="form__input" name="kids_ages">
+                    </div>
+                    <div class="form__group">
+                         <label class="form__label">Комментарий</label>
+                        <textarea class="form__textarea" name="message"></textarea>
+                    </div>
+                    <div class="form__group form__group--checkbox">
+                         <label class="form__checkbox-label">
+                            <input type="checkbox" class="form__checkbox" required>
+                            <span>Согласен с политикой конфиденциальности</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn--primary form__submit">
+                        <span class="btn__content"><span class="btn__text">Отправить</span></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <canvas id="snowCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
+    
+    <!-- SCRIPTS -->
+    <script src="/js/new-year.js"></script>
+    <script src="/packages/js/kids.js"></script>
+    
+    <!-- ГАРАНТИРОВАННОЕ ОТКРЫТИЕ МОДАЛКИ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('bookingModal');
+            const btns = document.querySelectorAll('[data-modal="booking"]');
+            const closeBtn = modal.querySelector('.modal__close');
+            const backdrop = modal.querySelector('.modal__backdrop');
+
+            if (!modal) return;
+
+            const openModal = (e) => {
+                if (e) e.preventDefault();
+                modal.classList.add('active');
+                modal.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+                modal.classList.remove('is-open');
+                document.body.style.overflow = '';
+            };
+
+            btns.forEach(btn => btn.addEventListener('click', openModal));
+
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+            if (backdrop) backdrop.addEventListener('click', closeModal);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

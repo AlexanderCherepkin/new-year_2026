@@ -1,0 +1,29 @@
+# Robots.txt для Новый Год 2026
+# Разрешаем индексацию всего сайта
+
+User-agent: *
+Allow: /
+
+# Запрещаем служебные директории
+Disallow: /cgi-bin/
+Disallow: /.well-known/
+
+# Карта сайта (когда будет готова)
+# Sitemap: https://yourdomain.com/sitemap.xml
+
+# Основные поисковые боты - полный доступ
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Ускоряем индексацию статических ресурсов
+User-agent: *
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /icons/

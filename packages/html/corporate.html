@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Новогодний корпоратив 2026 под ключ: ведущий, банкет, шоу-программа. Организация праздника для компании.">
+    <meta name="theme-color" content="#0f172a">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23FFD700' d='M50,5 l11,22 h23 l-18,14 l7,23 l-19,-13 l-19,13 l7,-23 l-18,-14 h23 z'/><polygon fill='%231B5E20' points='50,25 85,85 15,85'/><polygon fill='%232E7D32' points='50,20 75,65 25,65'/><polygon fill='%23388E3C' points='50,15 65,45 35,45'/><rect fill='%235D4037' x='42' y='85' width='16' height='15'/></svg>">
+    
+    <title>Корпоратив под ключ — Новый Год 2026</title>
+    
+    <!-- Шрифты и иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Merriweather:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- 1. ГЛОБАЛЬНЫЕ СТИЛИ -->
+    <link rel="stylesheet" href="/css/new-year.css">
+    
+    <!-- 2. СТИЛИ ЭТОЙ СТРАНИЦЫ (Создадим corporate.css) -->
+    <link rel="stylesheet" href="/packages/css/corporate.css">
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body class="corporate-page"> 
+    
+    <div id="toastContainer" class="toast-container"></div>
+    
+    <!-- HEADER -->
+    <header class="header" id="header" style="position: sticky;">
+        <div class="header__container container">
+            <a href="/index.html" class="logo" aria-label="Главная">
+                <span class="logo__icon">🎄</span>
+                <span>Новый Год 2026</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list" id="navList">
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="/index.html#gallery" class="nav__link">Галерея</a></li>
+                    <li class="nav__item"><a href="/index.html#video-gallery" class="nav__link">О празднике</a></li>
+                    <li class="nav__item"><a href="/index.html#offers" class="nav__link nav__link--active">Предложения</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="snow-toggle" id="snowToggle"><span class="snow-toggle__icon">❄️</span></button>
+            <button class="menu-toggle" id="menuToggle"><span class="menu-toggle__line"></span><span class="menu-toggle__line"></span><span class="menu-toggle__line"></span></button>
+        </div>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    <main class="page-content fix-layout">
+
+        <!-- Hero -->
+        <section class="package-hero" id="hero">
+            <div class="container package-hero__inner">
+                <div class="package-hero__content">
+                    <p class="package-hero__tag">Для бизнеса</p>
+                    <h1 class="package-hero__title">Корпоратив «Под ключ»: Ярко, Стильно, Без забот</h1>
+                    <p class="package-hero__subtitle">
+                        Организуем незабываемый праздник для вашей команды. Профессиональный ведущий, 
+                        современная программа и атмосфера, которая сплотит коллектив.
+                    </p>
+                    <ul class="package-hero__benefits">
+                        <li><i class="fas fa-users"></i> До 100 человек (можно больше)</li>
+                        <li><i class="fas fa-file-invoice"></i> Работаем с юр. лицами</li>
+                        <li><i class="fas fa-microphone"></i> Ведущий + DJ + Шоу</li>
+                    </ul>
+                    <div class="package-hero__cta">
+                        <button type="button" class="btn btn--primary js-open-booking" data-package="corporate">
+                            <span class="btn__content">Рассчитать смету</span>
+                        </button>
+                    </div>
+                </div>
+
+                <aside class="package-hero__side">
+                    <div class="package-summary-card">
+                        <h2 class="package-summary-card__title">ВХОДИТ В ПАКЕТ</h2>
+                        <ul class="package-summary-card__list">
+                            <li>Подбор площадки</li>
+                            <li>Ведущий и DJ (5 часов)</li>
+                            <li>Звук и свет</li>
+                            <li>Фотограф и координатор</li>
+                        </ul>
+                        <div class="package-summary-card__price">
+                            <span class="package-summary-card__price-current">89 990₽</span>
+                            <span class="package-summary-card__price-old">119 990₽</span>
+                        </div>
+                        <button type="button" class="btn btn--primary js-open-booking" data-package="corporate">
+                            <span class="btn__content">Заказать</span>
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Для кого -->
+        <section class="package-section package-audience">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="package-audience__grid">
+                    <div class="package-audience__text">
+                        <p>Этот пакет создан для руководителей и HR, которые хотят подарить сотрудникам настоящий праздник, а не просто "посиделки". Мы берем на себя всю головную боль по организации.</p>
+                        <p>Вам не нужно искать подрядчиков, стыковать тайминги и переживать за скучающих гостей. Мы делаем шоу, о котором будут говорить весь год.</p>
+                    </div>
+                    <div class="package-audience__ideal">
+                        <h3 class="package-audience__ideal-title">ИДЕАЛЬНО ДЛЯ:</h3>
+                        <ul class="package-audience__list">
+                            <li>Компаний, ценящих корпоративную культуру</li>
+                            <li>Тех, кто устал от банальных застолий</li>
+                            <li>Организации тимбилдинга в формате праздника</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Что входит -->
+        <section class="package-section package-includes">
+            <div class="container">
+                <h2 class="section-title">Что входит в программу</h2>
+                <div class="package-includes__grid">
+                    <article class="includes-group">
+                        <div class="includes-group__icon"><i class="fas fa-microphone-alt"></i></div>
+                        <h3 class="includes-group__title">ШОУ-ПРОГРАММА</h3>
+                        <ul class="includes-group__list">
+                            <li>Харизматичный ведущий</li>
+                            <li>DJ с актуальным плейлистом</li>
+                            <li>Интерактивы без пошлости</li>
+                        </ul>
+                    </article>
+                    <article class="includes-group">
+                        <div class="includes-group__icon"><i class="fas fa-camera"></i></div>
+                        <h3 class="includes-group__title">ТЕХНИКА И ФОТО</h3>
+                        <ul class="includes-group__list">
+                            <li>Профессиональный звук/свет</li>
+                            <li>Фотограф (репортаж)</li>
+                            <li>Фотозона с логотипом (опция)</li>
+                        </ul>
+                    </article>
+                    <article class="includes-group">
+                        <div class="includes-group__icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3 class="includes-group__title">ОРГАНИЗАЦИЯ</h3>
+                        <ul class="includes-group__list">
+                            <li>Персональный менеджер</li>
+                            <li>Тайминг-план вечера</li>
+                            <li>Координация на площадке</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Тайминг -->
+        <section class="package-section package-timeline">
+            <div class="container">
+                <h2 class="section-title">Тайминг вечера</h2>
+                <p class="section-subtitle">Оптимальный сценарий для вечеринки на 5-6 часов.</p>
+                
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__time">18:00</div>
+                        <div class="timeline__content">
+                            <h3>Сбор гостей</h3>
+                            <p>Welcome-зона, шампанское, легкий джаз, работа фотографа.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__time">19:00</div>
+                        <div class="timeline__content">
+                            <h3>Официальная часть</h3>
+                            <p>Начало банкета, слово руководителя, награждение сотрудников.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__time">20:00</div>
+                        <div class="timeline__content">
+                            <h3>Развлекательный блок</h3>
+                            <p>Конкурсы, квизы, выступления артистов (по желанию).</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__time">22:00</div>
+                        <div class="timeline__content">
+                            <h3>Дискотека</h3>
+                            <p>Танцевальная программа от DJ, вынос торта.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="package-section package-faq">
+            <div class="container">
+                <h2 class="section-title">Частые вопросы</h2>
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-item__question">Работаете ли вы по безналу?</summary>
+                        <div class="faq-item__answer">
+                            <p>Да, мы работаем официально по договору, предоставляем все закрывающие документы для бухгалтерии.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">Можно ли включить в пакет кейтеринг?</summary>
+                        <div class="faq-item__answer">
+                            <p>Базовая цена включает программу. Организацию питания (кейтеринг или банкет) мы рассчитываем отдельно, исходя из ваших пожеланий по меню.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__question">Сколько стоит продлить диджея?</summary>
+                        <div class="faq-item__answer">
+                            <p>Стандартная программа — 5 часов. Каждый дополнительный час работы команды оплачивается по тарифу 10 000₽/час.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Блок -->
+        <section class="cta section">
+            <div class="cta__container container">
+                <h2 class="cta__title">Готовы обсудить праздник?</h2>
+                <p class="cta__description">Оставьте заявку, и мы пришлем 3 варианта концепции для вашей компании.</p>
+                <button class="btn cta__button js-open-booking" data-package="corporate">
+                    <span class="btn__content">
+                        <span>Получить предложение</span>
+                        <span>🎄</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__section">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__links">
+                        <li><a href="/index.html" class="footer__link">→ Главная</a></li>
+                        <li><a href="/index.html#offers" class="footer__link">→ Предложения</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link">📞 +7 (999) 123-45-67</li>
+                        <li class="footer__link">✉️ b2b@newyear2026.ru</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Новый Год 2026.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- MODAL -->
+    <div class="modal" id="bookingModal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__container">
+            <div class="modal__content">
+                <button class="modal__close" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+                <div class="modal__header">
+                    <div class="modal__icon">👔</div> <!-- Иконка галстука -->
+                    <h2 class="modal__title">Оставить заявку</h2>
+                    <p class="modal__subtitle">Корпоративный пакет</p>
+                </div>
+                <form class="form" id="bookingForm" novalidate>
+                    <input type="hidden" name="package" value="corporate">
+                    <div class="form__group">
+                        <label class="form__label">Имя / Компания *</label>
+                        <input type="text" class="form__input" name="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Телефон *</label>
+                        <input type="tel" class="form__input" name="phone" required>
+                    </div>
+                    <div class="form__group">
+                         <label class="form__label">Комментарий (кол-во гостей, дата)</label>
+                        <textarea class="form__textarea" name="message"></textarea>
+                    </div>
+                    <div class="form__group form__group--checkbox">
+                         <label class="form__checkbox-label">
+                            <input type="checkbox" class="form__checkbox" required>
+                            <span>Согласен с политикой</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn--primary form__submit">
+                        <span class="btn__content"><span class="btn__text">Отправить</span></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <canvas id="snowCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
+    
+    <!-- SCRIPTS -->
+    <script src="/js/new-year.js"></script>
+    <!-- Используем тот же JS для анимаций -->
+    <script src="/packages/js/family.js"></script> 
+    
+    <!-- ГАРАНТИРОВАННОЕ ОТКРЫТИЕ МОДАЛКИ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('bookingModal');
+            const btns = document.querySelectorAll('[data-modal="booking"], .js-open-booking');
+            const closeBtn = modal ? modal.querySelector('.modal__close') : null;
+            const backdrop = modal ? modal.querySelector('.modal__backdrop') : null;
+
+            if (!modal) return;
+
+            const openModal = (e) => {
+                if(e) e.preventDefault();
+                modal.classList.add('active');
+                modal.classList.add('is-open'); 
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+                modal.classList.remove('is-open');
+                document.body.style.overflow = '';
+            };
+
+            btns.forEach(btn => btn.addEventListener('click', openModal));
+
+            if(closeBtn) closeBtn.addEventListener('click', closeModal);
+            if(backdrop) backdrop.addEventListener('click', closeModal);
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+            });
+        });
+    </script>
+</body>
+</html>

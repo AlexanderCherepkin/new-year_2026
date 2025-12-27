@@ -1,0 +1,342 @@
+/* =========================================
+   CRITICAL FIX: Layout Reset
+   ========================================= */
+body.kids-page .page-content {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* =========================================
+   Базовые настройки и шрифты
+   ========================================= */
+.kids-page {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Merriweather', serif;
+}
+
+/* Заголовки — Oswald, текст — Merriweather */
+h1, h2, h3, .section-title, .package-hero__title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.package-section {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   HERO BLOCK (Детская тематика - красные акценты)
+   ========================================= */
+.package-hero {
+    padding: 140px 0 100px;
+    background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.15), transparent 50%),
+                radial-gradient(circle at bottom left, rgba(249, 115, 22, 0.1), transparent 50%);
+}
+
+.package-hero__inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.package-hero__tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.package-hero__title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.package-hero__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.package-hero__benefits li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.package-hero__benefits i {
+    color: #fbbf24;
+}
+
+.package-hero__cta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Карточка справа */
+.package-summary-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.package-summary-card__title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.package-summary-card__price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.package-summary-card__price-current {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #fbbf24;
+}
+
+.package-summary-card__price-old {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.package-summary-card button.btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* =========================================
+   AUDIENCE SECTION
+   ========================================= */
+.package-audience__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.package-audience__ideal {
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.package-audience__ideal-title {
+    font-size: 2rem;
+    color: #fbbf24;
+    margin-bottom: 1.5rem;
+}
+
+.package-audience__list li {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    padding-left: 30px;
+    position: relative;
+}
+
+.package-audience__list li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ef4444;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/* =========================================
+   INCLUDES SECTION
+   ========================================= */
+.package-includes__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.includes-group {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.includes-group__icon {
+    font-size: 2.5rem;
+    color: #ef4444;
+    margin-bottom: 1.5rem;
+}
+
+.includes-group__title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.includes-group__list {
+    text-align: left;
+    display: inline-block;
+}
+
+/* =========================================
+   FAQ
+   ========================================= */
+.faq-item__question {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* =========================================
+   CTA SECTION
+   ========================================= */
+.cta {
+    text-align: center;
+}
+
+.cta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.cta__button {
+    margin-top: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   MEDIA QUERIES
+   ========================================= */
+@media (max-width: 992px) {
+    .package-hero__inner, .package-audience__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .package-hero__title {
+        font-size: 3rem;
+    }
+    
+    .package-hero__side {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+    
+    .package-hero__cta {
+        justify-content: center;
+    }
+    
+    .package-hero__content {
+        text-align: center;
+    }
+    
+    .package-hero__benefits li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 0;
+    }
+    
+    .timeline__item {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    
+    .timeline__time {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    
+    .timeline__item::after {
+        left: -5px;
+    }
+}
+
+/* =========================================
+   MODAL FIX
+   ========================================= */
+.modal.active {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 99999 !important;
+}
+
+.modal.active .modal__backdrop {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.modal.active .modal__container {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}   
+
+.btn__text {
+    margin: 0 120%;
+}
+
+.btn--outline-light {
+    color: gray;
+}
