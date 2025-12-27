@@ -1032,28 +1032,33 @@ const FormValidator = {
         return;
       }
 
-      const formData = new FormData(this.form);
-      const payload = Object.fromEntries(formData.entries());
-      payload.partyType = (document.getElementById('partyType')?.value || '').trim();
-
       submitBtn.classList.add('loading');
       submitBtn.disabled = true;
 
       try {
         if (!navigator.onLine) {
+          // Offline logic remains same
+          const formData = new FormData(this.form);
+          const payload = Object.fromEntries(formData.entries());
           savePendingRequest(payload);
-
           Toast.info(
             'Нет соединения',
             'Заявка сохранена. Мы отправим её автоматически, когда появится интернет.',
             7000
           );
         } else {
-          await sendRequestToServer(payload);
+          // EmailJS Integration
+          // Replace SERVICE_ID and TEMPLATE_ID with actual keys or keep placeholders
+          await emailjs.sendForm('service_newyear2026', 'template_newyear2026', this.form);
+
+          // Track Goal in Metrica
+          if (typeof ym === 'function') {
+            ym(99999999, 'reachGoal', 'form_submit');
+          }
 
           Toast.success(
             'Заявка отправлена! 🎉',
-            'Мы свяжемся с вами в ближайшее время',
+            'Скоро с вами свяжется наш менеджер',
             6000
           );
 
@@ -1068,9 +1073,10 @@ const FormValidator = {
           });
         }
       } catch (error) {
+        console.error('EmailJS Error:', error);
         Toast.error(
           'Ошибка отправки',
-          'Пожалуйста, попробуйте позже или позвоните нам'
+          'Пожалуйста, попробуйте позже или позвоните нам: +7 (999) 123-45-67'
         );
       } finally {
         submitBtn.classList.remove('loading');
@@ -1310,6 +1316,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initSnowCanvas();
   initLazyLottie();
   initLottiePlayers();
+  initScrollToTop(); // New feature
+
+  // Track button clicks logic
+  document.body.addEventListener('click', (e) => {
+    if (e.target.closest('.btn')) {
+      if (typeof ym === 'function') {
+        ym(99999999, 'reachGoal', 'btn_click');
+      }
+    }
+  });
 
   // ✅ ИСПРАВЛЕНО: Проверка localStorage вместо sessionStorage
   //    Теперь уведомление показывается только при ПЕРВОМ посещении сайта
@@ -1854,3 +1870,31 @@ async function runPwaChecklist() {
     console.log('✅ All modules initialization complete!');
   }
 })();
+
+// ============================================
+// SCROLL TO TOP FEATURE
+// ============================================
+function initScrollToTop() {
+  const btn = document.getElementById('scrollToTop');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+
+    // Track Scroll Up Goal
+    if (typeof ym === 'function') {
+      ym(99999999, 'reachGoal', 'scroll_top');
+    }
+  });
+}
