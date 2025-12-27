@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Детский новогодний праздник: представление с Дедом Морозом, Снегурочкой, игры и подарки.">
+    <meta name="description"
+        content="Детский новогодний праздник: представление с Дедом Морозом, Снегурочкой, игры и подарки.">
     <meta name="theme-color" content="#0f172a">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23FFD700' d='M50,5 l11,22 h23 l-18,14 l7,23 l-19,-13 l-19,13 l7,-23 l-18,-14 h23 z'/><polygon fill='%231B5E20' points='50,25 85,85 15,85'/><polygon fill='%232E7D32' points='50,20 75,65 25,65'/><polygon fill='%23388E3C' points='50,15 65,45 35,45'/><rect fill='%235D4037' x='42' y='85' width='16' height='15'/></svg>">
-    
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23FFD700' d='M50,5 l11,22 h23 l-18,14 l7,23 l-19,-13 l-19,13 l7,-23 l-18,-14 h23 z'/><polygon fill='%231B5E20' points='50,25 85,85 15,85'/><polygon fill='%232E7D32' points='50,20 75,65 25,65'/><polygon fill='%23388E3C' points='50,15 65,45 35,45'/><rect fill='%235D4037' x='42' y='85' width='16' height='15'/></svg>">
+
     <title>Детский праздник — Новый Год 2026</title>
-    
+
     <!-- Шрифты и иконки -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Merriweather:wght@300;400;700;900&amp;=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Merriweather:wght@300;400;700;900&amp;=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- Глобальные стили -->
     <link rel="stylesheet" href="/css/new-year.css">
     <!-- Локальные стили для детской страницы -->
     <link rel="stylesheet" href="/packages/css/kids.css">
-    
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
+
 <body class="kids-page">
-    
+
     <div id="toastContainer" class="toast-container"></div>
-    
+
     <!-- HEADER -->
     <header class="header" id="header" style="position: sticky;">
         <div class="header__container container">
-            <a href="/index.html" class="logo" aria-label="Главная">
+            <a href="../../index.html" class="logo" aria-label="Главная">
                 <span class="logo__icon">🎄</span>
                 <span>Новый Год 2026</span>
             </a>
-            
+
             <nav class="nav" id="nav">
                 <ul class="nav__list" id="navList">
-                    <li class="nav__item"><a href="/index.html" class="nav__link">Главная</a></li>
-                    <li class="nav__item"><a href="/index.html#gallery" class="nav__link">Галерея</a></li>
-                    <li class="nav__item"><a href="/index.html#video-gallery" class="nav__link">О празднике</a></li>
-                    <li class="nav__item"><a href="/index.html#offers" class="nav__link nav__link--active">Предложения</a></li>
+                    <li class="nav__item"><a href="../../index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="../../index.html#gallery" class="nav__link">Галерея</a></li>
+                    <li class="nav__item"><a href="../../index.html#video-gallery" class="nav__link">О празднике</a>
+                    </li>
+                    <li class="nav__item"><a href="../../index.html#offers"
+                            class="nav__link nav__link--active">Предложения</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
-            
-            <button class="snow-toggle" id="snowToggle" aria-label="Управление снегом"><span class="snow-toggle__icon">❄️</span></button>
+
+            <button class="snow-toggle" id="snowToggle" aria-label="Управление снегом"><span
+                    class="snow-toggle__icon">❄️</span></button>
             <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
                 <span class="menu-toggle__line"></span>
                 <span class="menu-toggle__line"></span>
@@ -53,10 +62,10 @@
             </button>
         </div>
     </header>
-    
+
     <!-- MAIN CONTENT -->
     <main class="page-content fix-layout">
-        
+
         <!-- Hero-блок -->
         <section class="package-hero" id="hero">
             <div class="container package-hero__inner">
@@ -64,7 +73,8 @@
                     <p class="package-hero__tag">Для детей</p>
                     <h1 class="package-hero__title">Волшебный детский праздник</h1>
                     <p class="package-hero__subtitle">
-                        Яркое представление с Дедом Морозом и Снегурочкой, игры, конкурсы и сладкие подарки для детей от 3 до 12 лет.
+                        Яркое представление с Дедом Морозом и Снегурочкой, игры, конкурсы и сладкие подарки для детей от
+                        3 до 12 лет.
                     </p>
                     <ul class="package-hero__benefits">
                         <li><i class="fas fa-child"></i> Для детей 3–12 лет</li>
@@ -77,7 +87,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <aside class="package-hero__side">
                     <div class="package-summary-card">
                         <h2 class="package-summary-card__title">Кратко о пакете</h2>
@@ -91,7 +101,8 @@
                             <span class="package-summary-card__price-current">29 990₽</span>
                             <span class="package-summary-card__price-old">49 990₽</span>
                         </div>
-                        <button type="button" class="btn btn--outline-light" style="width: 100%; margin-top: 15px;" data-modal="booking" data-package="kids">
+                        <button type="button" class="btn btn--outline-light" style="width: 100%; margin-top: 15px;"
+                            data-modal="booking" data-package="kids">
                             Заказать
                         </button>
                     </div>
@@ -105,8 +116,10 @@
                 <h2 class="section-title">Для кого этот пакет</h2>
                 <div class="package-audience__grid">
                     <div class="package-audience__text">
-                        <p>Идеально подходит для семей с детьми, которые хотят создать незабываемую атмосферу волшебства и радости.</p>
-                        <p>Мы продумываем каждый момент, чтобы праздник был увлекательным для детей и спокойным для родителей.</p>
+                        <p>Идеально подходит для семей с детьми, которые хотят создать незабываемую атмосферу волшебства
+                            и радости.</p>
+                        <p>Мы продумываем каждый момент, чтобы праздник был увлекательным для детей и спокойным для
+                            родителей.</p>
                     </div>
                     <div class="package-audience__ideal">
                         <h3 class="package-audience__ideal-title">Идеально, если…</h3>
@@ -161,7 +174,7 @@
             <div class="container">
                 <h2 class="section-title">Сценарий по времени</h2>
                 <p class="section-subtitle">Примерный план, адаптируем под возраст и пожелания детей.</p>
-                
+
                 <div class="timeline">
                     <div class="timeline__item">
                         <div class="timeline__time">18:00</div>
@@ -203,7 +216,8 @@
                     <details class="faq-item">
                         <summary class="faq-item__question">Можно ли адаптировать программу под возраст детей?</summary>
                         <div class="faq-item__answer">
-                            <p>Да! Мы всегда учитываем возраст и интересы детей, чтобы программа была максимально увлекательной.</p>
+                            <p>Да! Мы всегда учитываем возраст и интересы детей, чтобы программа была максимально
+                                увлекательной.</p>
                         </div>
                     </details>
                     <details class="faq-item">
@@ -249,9 +263,9 @@
                 <div class="footer__section">
                     <h3 class="footer__title">Навигация</h3>
                     <ul class="footer__links">
-                        <li><a href="/index.html#hero" class="footer__link">→ Главная</a></li>
-                        <li><a href="/index.html#features" class="footer__link">→ О празднике</a></li>
-                        <li><a href="/index.html#offers" class="footer__link">→ Предложения</a></li>
+                        <li><a href="../../index.html#hero" class="footer__link">→ Главная</a></li>
+                        <li><a href="../../index.html#features" class="footer__link">→ О празднике</a></li>
+                        <li><a href="../../index.html#offers" class="footer__link">→ Предложения</a></li>
                     </ul>
                 </div>
                 <div class="footer__section">
@@ -267,7 +281,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- MODAL -->
     <div class="modal" id="bookingModal">
         <div class="modal__backdrop"></div>
@@ -298,11 +312,11 @@
                         <input type="text" class="form__input" name="kids_ages">
                     </div>
                     <div class="form__group">
-                         <label class="form__label">Комментарий</label>
+                        <label class="form__label">Комментарий</label>
                         <textarea class="form__textarea" name="message"></textarea>
                     </div>
                     <div class="form__group form__group--checkbox">
-                         <label class="form__checkbox-label">
+                        <label class="form__checkbox-label">
                             <input type="checkbox" class="form__checkbox" required>
                             <span>Согласен с политикой конфиденциальности</span>
                         </label>
@@ -314,16 +328,17 @@
             </div>
         </div>
     </div>
-    
-    <canvas id="snowCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
-    
+
+    <canvas id="snowCanvas"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
+
     <!-- SCRIPTS -->
-    <script src="/js/new-year.js"></script>
-    <script src="/packages/js/kids.js"></script>
-    
+    <script src="../../js/new-year.js"></script>
+    <script src="../js/kids.js"></script>
+
     <!-- ГАРАНТИРОВАННОЕ ОТКРЫТИЕ МОДАЛКИ -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const modal = document.getElementById('bookingModal');
             const btns = document.querySelectorAll('[data-modal="booking"]');
             const closeBtn = modal.querySelector('.modal__close');
@@ -357,4 +372,5 @@
         });
     </script>
 </body>
+
 </html>
