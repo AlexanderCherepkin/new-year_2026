@@ -5,13 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Семейный новогодний пакет «Под ключ»: оформление, программа, Дед Мороз и Снегурочка.">
+        content="Семейный новогодний пакет «Под ключ»: оформление, программа, Дед Мороз и Снегурочка. Цена 49,990₽ (скидка 30%). Для 4-8 человек.">
+    <meta name="keywords" content="семейный новый год, новогодний праздник дома, дед мороз на дом, семейный пакет">
+    <meta name="author" content="Новый Год 2026">
     <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://alexandercherepkin.github.io/new-year_2026/packages/html/family.html">
 
-    <!-- Open Graph -->
+    <!-- Open Graph (Facebook, VK, LinkedIn) -->
+    <meta property="og:site_name" content="Новый Год 2026">
     <meta property="og:title" content="Семейный Новый Год 2026 — Пакет услуг">
     <meta property="og:description"
-        content="Полный комплект для проведения семейного праздника: оформление, подарки, развлечения.">
+        content="Полный комплект для проведения семейного праздника: оформление, подарки, развлечения, Дед Мороз. 49,990₽">
+    <meta property="og:image" content="https://alexandercherepkin.github.io/new-year_2026/images/children-800.webp">
+    <meta property="og:image:secure_url"
+        content="https://alexandercherepkin.github.io/new-year_2026/images/children-800.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://alexandercherepkin.github.io/new-year_2026/packages/html/family.html">
+    <meta property="og:type" content="product">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Семейный Новый Год 2026 — Пакет услуг">
+    <meta name="twitter:description"
+        content="Полный комплект для семейного праздника: оформление, Дед Мороз, подарки. 49,990₽">
+    <meta name="twitter:image" content="https://alexandercherepkin.github.io/new-year_2026/images/children-800.webp">
 
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23FFD700' d='M50,5 l11,22 h23 l-18,14 l7,23 l-19,-13 l-19,13 l7,-23 l-18,-14 h23 z'/><polygon fill='%231B5E20' points='50,25 85,85 15,85'/><polygon fill='%232E7D32' points='50,20 75,65 25,65'/><polygon fill='%23388E3C' points='50,15 65,45 35,45'/><rect fill='%235D4037' x='42' y='85' width='16' height='15'/></svg>">
@@ -37,7 +57,12 @@
 
 <body class="family-page">
 
-    <div id="toastContainer" class="toast-container"></div>
+    <!-- Skip Navigation Links for A11y -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+    <a href="#nav" class="skip-link">Перейти к навигации</a>
+    <a href="#contact" class="skip-link">Перейти к контактам</a>
+
+    <div id="toastContainer" class="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <!-- HEADER -->
     <header class="header" id="header" style="position: sticky;">
@@ -68,7 +93,7 @@
 
     <!-- MAIN CONTENT -->
     <!-- Класс fix-layout добавлен для подстраховки от flex-конфликтов -->
-    <main class="page-content fix-layout">
+    <main class="page-content fix-layout" id="main-content" role="main">
 
         <!-- Hero -->
         <section class="package-hero" id="hero">
